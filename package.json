@@ -1,7 +1,10 @@
 {
   "name": "bento-gallery-mcp",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server & CLI curating world-class Bento Grid UI components directly from 20 premier design engineering libraries (Aceternity UI, Magic UI, Kokonut UI, Cult UI, Spell.sh, Ibelick, Coss UI, and more).",
   "type": "module",
+  "main": "dist/core.js",
+  "types": "dist/core.d.ts",
   "bin": {
     "bento-gallery": "dist/cli.js",
     "bento-gallery-mcp": "dist/mcp.js"
@@ -10,7 +13,29 @@
     "build": "tsc",
     "test": "node test-mcp-client.js",
     "cli": "node dist/cli.js",
-    "mcp": "node dist/mcp.js"
+    "mcp": "node dist/mcp.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bento-grid",
+    "ui-components",
+    "tailwind",
+    "react",
+    "framer-motion",
+    "aceternity",
+    "magicui",
+    "kokonutui",
+    "cult-ui",
+    "spell-sh",
+    "design-engineering"
+  ],
+  "author": "Kartik",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k39139215-gif/bento-gallery-mcp.git"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.31.0",
