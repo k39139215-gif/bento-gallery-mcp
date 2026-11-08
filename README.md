@@ -1,102 +1,70 @@
 # Bento Gallery MCP & CLI 🍱
 
-A specialized Model Context Protocol (MCP) server and developer CLI curating world-class **Bento Grid UI layouts & micro-interactions** from premier tech brands and modern design engineering studios.
+A dedicated Model Context Protocol (MCP) server and developer CLI curating world-class **Bento Grid UI Components** strictly from **Premier Component Engineering Libraries & Design Toolkits**:
 
-> **Why Bento Grids?**
-> Bento Grids organize complex product features, statistics, architectures, and micro-tools into harmonious, asymmetric grid cards that boost engagement and clarity.
+- **Spell.sh** (`spell`)
+- **Rare UI / Rareblocks** (`rare-ui`)
+- **Transitions.dev** (`transitions-dev`)
+- **Cult UI** (`cult-ui`)
+- **Coss UI / Browse Particles** (`coss-ui`)
+- **Spectrum UI** (`spectrum-ui`)
+- **UseLayout** (`uselayout`)
+- **Details.design** (`details-design`)
+- **BeUI** (`beui`)
+- **Affect UI** (`affect-ui`)
+- **Magic UI** (`magicui`)
+- **Aceternity UI** (`aceternity`)
 
 ---
 
-## 🌟 Multi-Source Design Inspirations
+## 🌟 Curated Component Libraries & Features
 
-We intentionally curate and synthesize patterns across the industry's highest-regarded bento implementations:
-
-| Source | Category | Aesthetic & Mechanics |
+| Component Library | Category | Key Bento Component Characteristics |
 | :--- | :--- | :--- |
-| **Apple Keynote** | `hardware-launch` | Obsidian black, metallic gradients, 3nm chip dies, battery ring dials, and acoustic wave cards. |
-| **Linear.app** | `saas-feature` | Asymmetric dark glass, cycle burnup sparklines, keyboard hotkeys (`C`, `X`, `⌘K`), and Git sync status. |
-| **Raycast** | `saas-feature` | Quick search command palettes, hotkey badges (`⌥ Space`), AI prompt tiles, and community extensions. |
-| **Vercel** | `developer-cloud` | Stark monochrome contrast, global edge latency matrices, git commit SHA preview cards, and streaming SSR. |
-| **Aceternity UI** | `interactive-animated` | Cursor-following radial light spotlights, dynamic glowing borders, and 3D floating pin radars. |
-| **Magic UI** | `interactive-animated` | Living components: interactive file tree directory, infinite tech marquee ticker, and live notification streams. |
-| **Spell.sh** | `interactive-animated` | 3D multi-axis perspective tilt (`perspective: 1000px`, `rotateX/Y`), photorealistic specular glare, and Z-axis depth. |
-| **Supabase** | `developer-cloud` | Emerald green (`#3ECF8E`), instant PostgreSQL query runner console, and Row Level Security shield toggles. |
-| **Bentogrids.com** | `minimal-editorial` | Curated Swiss typography, 12-column rhythms, warm monochromes, and tactile micro-elevation hover physics. |
+| **Spell.sh** (`spell`) | `3d-spatial` | 3D multi-axis perspective tilt (`perspective: 1000px`, `rotateX/Y`), photorealistic specular glare, and Z-axis depth layers. |
+| **Cult UI** (`cult-ui`) | `spotlight-shaders` | Animated conic-gradient rotating border halo, cyberpunk glass panels, and glow masks. |
+| **Rare UI / Rareblocks** (`rare-ui`) | `minimal-blocks` | Structured SaaS feature bento blocks with telemetry counters and high-contrast typographic hierarchy. |
+| **Transitions.dev** (`transitions-dev`) | `animated-motion` | Fluid layout morphing, spring expansion physics, and seamless state-to-state transitions. |
+| **Coss UI (Browse Particles)** (`coss-ui`) | `particles-canvas` | Embedded HTML5 canvas interactive constellation particles with cursor proximity and repulsion physics. |
+| **Spectrum UI** (`spectrum-ui`) | `spotlight-shaders` | High-contrast cybernetic edge glow cards, mono telemetry dials, and technical HUDs. |
+| **UseLayout** (`uselayout`) | `minimal-blocks` | Mathematically balanced 12-column asymmetric responsive bento layout architectures. |
+| **Details.design** (`details-design`) | `animated-motion` | Tactile micro-interactions, hardware-inspired mechanical spring switches, and craft polish. |
+| **BeUI** (`beui`) | `minimal-blocks` | Restrained minimalist frosted glass cards, subtle 1px borders, and micro-badge pills. |
+| **Affect UI** (`affect-ui`) | `spotlight-shaders` | Ambient reactive lighting, dynamic drop shadow depth, and state-responsive glow fields. |
+| **Magic UI** (`magicui`) | `animated-motion` | Interactive living components including file tree explorers, marquis, and command palettes. |
+| **Aceternity UI** (`aceternity`) | `spotlight-shaders` | Cursor-following radial spotlight borders, neon shader glows, and glassmorphic card panels. |
 
 ---
 
-## 🚀 Quick Start
-
-### 1. Installation & Build
+## 🚀 Build & Test
 
 ```bash
 cd bento-gallery-mcp
 npm run build
+npm test
 ```
 
-### 2. Standalone Terminal CLI Usage
+## 💻 Terminal CLI Usage
 
 ```bash
-# List all categories
+# List all component categories
 node dist/cli.js categories
 
-# List all inspiration sources
+# List all component libraries
 node dist/cli.js sources
 
-# List all bento grids
+# List bento components
 node dist/cli.js list
 
 # Filter by category
-node dist/cli.js list interactive-animated
+node dist/cli.js list spotlight-shaders
 
-# Search bento grids
-node dist/cli.js search spotlight
+# Search by keyword
+node dist/cli.js search particles
 
-# View bento details and layout summary
-node dist/cli.js view apple-m3-pro-bento
+# View component details
+node dist/cli.js view cult-ui-shader-bento
 
-# Output full production React + Tailwind CSS code
-node dist/cli.js code linear-sleek-bento
-```
-
----
-
-## 🛠️ MCP Tools Reference
-
-When connected via MCP to Claude, Cursor, Antigravity, or other AI assistants:
-
-- **`list_categories`**: View all 5 curated design categories with grid counts.
-- **`list_sources`**: View all 9 multi-source inspiration studios and platforms.
-- **`list_grids`**: Query bento grids with optional category/source filters and pagination.
-- **`search_grids`**: Full-text keyword search across titles, descriptions, tags, and features.
-- **`get_grid`**: Fetch layout specs, tile compositions, and design details for any bento grid.
-- **`get_bento_code`**: Retrieve complete, ready-to-use React + Tailwind CSS code.
-
----
-
-## 🔌 Antigravity / Claude Desktop Setup
-
-Add to your `mcp_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "bento-gallery": {
-      "command": "node",
-      "args": [
-        "C:\\Users\\kartik\\.gemini\\antigravity\\scratch\\bento-gallery-mcp\\dist\\mcp.js"
-      ]
-    }
-  }
-}
-```
-
----
-
-## 🧪 Automated Testing
-
-Verify the server with the automated MCP test client:
-
-```bash
-node test-mcp-client.js
+# Get copy-pasteable React + Tailwind CSS code
+node dist/cli.js code spell-spatial-tilt-bento
 ```

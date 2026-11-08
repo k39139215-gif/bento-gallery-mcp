@@ -2,73 +2,88 @@ import { BentoCategory, BentoCategoryInfo, BentoItem, BentoSource, BentoSourceIn
 import { CURATED_BENTO_GRIDS } from './curated.js';
 
 export const CATEGORIES_DATA: Record<BentoCategory, { name: string; description: string }> = {
-  'saas-feature': {
-    name: 'SaaS Feature Showcase',
-    description: 'Modern software product overviews featuring sprint charts, cycle progress, and keyboard-first navigation.',
+  'animated-motion': {
+    name: 'Animated & Fluid Motion',
+    description: 'Dynamic layout transitions, living tech marquees, morphing expansion tiles, and mechanical spring switches.',
   },
-  'developer-cloud': {
-    name: 'Developer & Cloud Infrastructure',
-    description: 'High-performance cloud platforms, database architecture, edge regions, and git deployment pipelines.',
+  'spotlight-shaders': {
+    name: 'Spotlight & Shader Halos',
+    description: 'Cursor-following radial light cones, rotating conic shader borders, and ambient reactive glow fields.',
   },
-  'hardware-launch': {
-    name: 'Hardware & Product Launch',
-    description: 'High-contrast hardware feature matrices showcasing silicon chips, battery life, displays, and acoustic benchmarks.',
+  '3d-spatial': {
+    name: '3D Spatial Perspective',
+    description: 'Hardware-accelerated multi-axis 3D perspective tilt transforms with photorealistic specular glare reflection.',
   },
-  'interactive-animated': {
-    name: 'Interactive & Animated Grids',
-    description: 'Living UI components featuring cursor-following spotlights, 3D perspective tilts, living widgets, and marquis.',
+  'particles-canvas': {
+    name: 'Living Canvas Particles',
+    description: 'Interactive HTML5 canvas particle meshes with cursor proximity repulsion and animated constellation lines.',
   },
-  'minimal-editorial': {
-    name: 'Minimal & Editorial Magazine',
-    description: 'Swiss typographic layouts, warm monochromes, tactile elevations, and restrained architectural dividers.',
+  'minimal-blocks': {
+    name: 'Minimal & Modular Blocks',
+    description: 'Clean SaaS feature matrices, mathematical 12-column asymmetric grids, and frosted glass panels.',
   },
 };
 
 export const SOURCES_DATA: Record<BentoSource, { name: string; description: string; website: string }> = {
-  apple: {
-    name: 'Apple Keynote Design',
-    description: 'Hardware launch feature matrices with obsidian contrast and large metric typography.',
-    website: 'https://apple.com',
+  spell: {
+    name: 'Spell.sh Interactive Studio',
+    description: '3D cursor perspective tilt transforms with specular light reflections and spatial depth.',
+    website: 'https://spell.sh',
   },
-  linear: {
-    name: 'Linear Product Design',
-    description: 'Asymmetric dark modern SaaS grids with sprint velocity graphs and keyboard hotkey caps.',
-    website: 'https://linear.app',
+  'rare-ui': {
+    name: 'Rare UI / Rareblocks',
+    description: 'Production-ready SaaS feature bento grids with structured metric hierarchy and telemetry.',
+    website: 'https://rareblocks.xyz',
   },
-  raycast: {
-    name: 'Raycast Extensions',
-    description: 'Keyboard spotlight launcher grids with search input bars and community extension chips.',
-    website: 'https://raycast.com',
+  'transitions-dev': {
+    name: 'Transitions.dev',
+    description: 'Fluid layout state morphing, spring expansion physics, and smooth animated transitions.',
+    website: 'https://transitions.dev',
   },
-  vercel: {
-    name: 'Vercel Frontend Cloud',
-    description: 'Global edge latency maps, preview deployment status cards, and Next.js streaming indicators.',
-    website: 'https://vercel.com',
+  'cult-ui': {
+    name: 'Cult UI',
+    description: 'Animated conic shader halo borders, cyberpunk dark glass cards, and glowing gradient masks.',
+    website: 'https://cult-ui.com',
   },
-  aceternity: {
-    name: 'Aceternity UI',
-    description: 'Cursor-following radial spotlight borders, neon shader glows, and glassmorphic card panels.',
-    website: 'https://ui.aceternity.com',
+  'coss-ui': {
+    name: 'Coss UI (Browse Particles)',
+    description: 'Interactive HTML5 canvas particle constellations with cursor physics and proximity connections.',
+    website: 'https://coss.so',
+  },
+  'spectrum-ui': {
+    name: 'Spectrum UI',
+    description: 'High-contrast cybernetic edge glow cards, mono telemetry dials, and technical HUDs.',
+    website: 'https://spectrum-ui.dev',
+  },
+  uselayout: {
+    name: 'UseLayout',
+    description: 'Mathematically balanced 12-column asymmetric responsive bento layout architectures.',
+    website: 'https://uselayout.com',
+  },
+  'details-design': {
+    name: 'Details.design',
+    description: 'Tactile micro-interactions, hardware-inspired mechanical spring switches, and craft polish.',
+    website: 'https://details.design',
+  },
+  beui: {
+    name: 'BeUI',
+    description: 'Restrained minimalist frosted glass cards, subtle 1px borders, and micro-badge pills.',
+    website: 'https://beui.dev',
+  },
+  'affect-ui': {
+    name: 'Affect UI',
+    description: 'Ambient reactive lighting, dynamic drop shadow depth, and state-responsive glow fields.',
+    website: 'https://affect-ui.com',
   },
   magicui: {
     name: 'Magic UI',
     description: 'Interactive living components including file tree explorers, marquis, and command palettes.',
     website: 'https://magicui.design',
   },
-  spell: {
-    name: 'Spell.sh Interactive Studio',
-    description: '3D cursor perspective tilt transforms with specular light reflections and spatial depth.',
-    website: 'https://spell.sh',
-  },
-  supabase: {
-    name: 'Supabase Architecture',
-    description: 'Emerald green PostgreSQL consoles, Row Level Security badges, and realtime WebSocket feeds.',
-    website: 'https://supabase.com',
-  },
-  bentogrids: {
-    name: 'Bentogrids.com Gallery',
-    description: 'Curated world-class bento grid showcases across web design, graphic design, and dark/light modes.',
-    website: 'https://bentogrids.com',
+  aceternity: {
+    name: 'Aceternity UI',
+    description: 'Cursor-following radial spotlight borders, neon shader glows, and glassmorphic card panels.',
+    website: 'https://ui.aceternity.com',
   },
 };
 
@@ -123,7 +138,6 @@ export function listGrids(options: {
   const startIndex = (page - 1) * limit;
   const paginated = results.slice(startIndex, startIndex + limit);
 
-  // Return without the raw code in listing to keep payloads lightweight
   const lightweightGrids = paginated.map(({ code, ...rest }) => rest as BentoItem);
 
   return {

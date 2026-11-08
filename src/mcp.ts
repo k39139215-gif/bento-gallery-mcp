@@ -19,23 +19,26 @@ const server = new McpServer({
 });
 
 const categoryEnum = z.enum([
-  "saas-feature",
-  "developer-cloud",
-  "hardware-launch",
-  "interactive-animated",
-  "minimal-editorial",
+  "animated-motion",
+  "spotlight-shaders",
+  "3d-spatial",
+  "particles-canvas",
+  "minimal-blocks",
 ]);
 
 const sourceEnum = z.enum([
-  "apple",
-  "linear",
-  "raycast",
-  "vercel",
-  "aceternity",
-  "magicui",
   "spell",
-  "supabase",
-  "bentogrids",
+  "rare-ui",
+  "transitions-dev",
+  "cult-ui",
+  "coss-ui",
+  "spectrum-ui",
+  "uselayout",
+  "details-design",
+  "beui",
+  "affect-ui",
+  "magicui",
+  "aceternity",
 ]);
 
 const json = (data: unknown) => ({
@@ -50,7 +53,7 @@ const fail = (e: unknown) => ({
 server.registerTool(
   "list_categories",
   {
-    description: "List all curated Bento Grid categories (saas-feature, developer-cloud, hardware-launch, interactive-animated, minimal-editorial) with grid counts.",
+    description: "List all curated Bento Grid categories (animated-motion, spotlight-shaders, 3d-spatial, particles-canvas, minimal-blocks) with component counts.",
     inputSchema: {},
   },
   async () => json(listCategories())
@@ -59,7 +62,7 @@ server.registerTool(
 server.registerTool(
   "list_sources",
   {
-    description: "List all multi-source Bento Grid inspirations (Apple, Linear, Raycast, Vercel, Aceternity UI, Magic UI, Spell.sh, Supabase, Bentogrids.com) with descriptions and counts.",
+    description: "List all component design engineering websites and libraries (Spell.sh, Rare UI, Transitions.dev, Cult UI, Coss UI, Spectrum UI, UseLayout, Details.design, BeUI, Affect UI, Magic UI, Aceternity UI).",
     inputSchema: {},
   },
   async () => json(listSources())
@@ -68,7 +71,7 @@ server.registerTool(
 server.registerTool(
   "list_grids",
   {
-    description: "List Bento Grids with optional category and source filters plus pagination.",
+    description: "List Bento Grids with optional category and component library source filters plus pagination.",
     inputSchema: {
       category: categoryEnum.optional(),
       source: sourceEnum.optional(),
@@ -95,9 +98,9 @@ server.registerTool(
 server.registerTool(
   "search_grids",
   {
-    description: "Search Bento Grids across titles, descriptions, features, tags, and inspiration sources.",
+    description: "Search Bento Grids across titles, descriptions, features, tags, and component libraries.",
     inputSchema: {
-      query: z.string().describe("Search keyword, e.g. 'spotlight', 'linear', 'sql', 'hardware', '3d tilt'"),
+      query: z.string().describe("Search keyword, e.g. 'particles', 'shader', '3d tilt', 'transitions', 'rare', 'spotlight'"),
       category: categoryEnum.optional(),
     },
   },
@@ -115,7 +118,7 @@ server.registerTool(
   {
     description: "Get detailed information, tile composition summary, and features of a specific Bento Grid by slug.",
     inputSchema: {
-      slug: z.string().describe("Slug of the bento grid (e.g. 'apple-m3-pro-bento', 'linear-sleek-bento', 'aceternity-spotlight-bento')"),
+      slug: z.string().describe("Slug of the bento grid (e.g. 'spell-spatial-tilt-bento', 'cult-ui-shader-bento', 'coss-ui-particles-bento')"),
     },
   },
   async ({ slug }) => {
@@ -136,7 +139,7 @@ server.registerTool(
   {
     description: "Retrieve full, production-ready, copy-pasteable React + Tailwind CSS code for a specified Bento Grid.",
     inputSchema: {
-      slug: z.string().describe("Slug of the bento grid (e.g. 'apple-m3-pro-bento', 'linear-sleek-bento', 'spell-spatial-tilt-bento')"),
+      slug: z.string().describe("Slug of the bento grid (e.g. 'spell-spatial-tilt-bento', 'cult-ui-shader-bento', 'rare-ui-feature-bento')"),
     },
   },
   async ({ slug }) => {
@@ -149,7 +152,7 @@ server.registerTool(
         content: [
           {
             type: "text" as const,
-            text: `// Bento Grid: ${result.title} (${result.slug})\n// Source Inspiration: ${result.source}\n\n${result.code}`,
+            text: `// Bento Grid: ${result.title} (${result.slug})\n// Component Library Source: ${result.source}\n\n${result.code}`,
           },
         ],
       };

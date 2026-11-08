@@ -1,20 +1,23 @@
 export type BentoCategory =
-  | 'saas-feature'
-  | 'developer-cloud'
-  | 'hardware-launch'
-  | 'interactive-animated'
-  | 'minimal-editorial';
+  | 'animated-motion'
+  | 'spotlight-shaders'
+  | '3d-spatial'
+  | 'particles-canvas'
+  | 'minimal-blocks';
 
 export type BentoSource =
-  | 'apple'
-  | 'linear'
-  | 'raycast'
-  | 'vercel'
-  | 'aceternity'
-  | 'magicui'
   | 'spell'
-  | 'supabase'
-  | 'bentogrids';
+  | 'rare-ui'
+  | 'transitions-dev'
+  | 'cult-ui'
+  | 'coss-ui'
+  | 'spectrum-ui'
+  | 'uselayout'
+  | 'details-design'
+  | 'beui'
+  | 'affect-ui'
+  | 'magicui'
+  | 'aceternity';
 
 export interface BentoTile {
   title: string;
