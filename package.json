@@ -9,6 +9,14 @@
     "bento-gallery": "dist/cli.js",
     "bento-gallery-mcp": "dist/mcp.js"
   },
+  "homepage": "https://k39139215-gif.github.io/bento-gallery-mcp/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k39139215-gif/bento-gallery-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/k39139215-gif/bento-gallery-mcp/issues"
+  },
   "scripts": {
     "build": "tsc",
     "test": "node test-mcp-client.js",
@@ -20,23 +28,29 @@
     "mcp",
     "model-context-protocol",
     "bento-grid",
+    "bento-ui",
     "ui-components",
-    "tailwind",
     "react",
+    "tailwindcss",
     "framer-motion",
     "aceternity",
     "magicui",
     "kokonutui",
     "cult-ui",
     "spell-sh",
-    "design-engineering"
+    "shadcn",
+    "design-engineering",
+    "design-system",
+    "chatgpt-mcp",
+    "claude-desktop",
+    "cursor-mcp",
+    "awesome-mcp-servers",
+    "agentic-coding",
+    "ai-coding",
+    "frontend"
   ],
   "author": "Kartik",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/k39139215-gif/bento-gallery-mcp.git"
-  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.31.0",
     "zod": "^4.6.5"

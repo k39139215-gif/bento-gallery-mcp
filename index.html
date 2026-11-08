@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curated Bento Grid UI Components from 20 Premier Design Engineering Libraries (Aceternity UI, Magic UI, Kokonut UI, Cult UI, shadcn). Model Context Protocol (MCP) server for Cursor, Claude Desktop, and AI coding assistants.">
+  <meta name="keywords" content="bento grid, bento ui, mcp server, model context protocol, aceternity ui, magic ui, kokonut ui, cult ui, shadcn, tailwind css, react, framer motion, cursor mcp, claude desktop mcp, ai coding, awesome mcp">
+  <meta name="author" content="Kartik">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://k39139215-gif.github.io/bento-gallery-mcp/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://k39139215-gif.github.io/bento-gallery-mcp/">
+  <meta property="og:title" content="Bento Gallery MCP • 20 Premier Design Engineering Libraries">
+  <meta property="og:description" content="Model Context Protocol (MCP) server & CLI curating world-class Bento Grid UI components directly for Claude Desktop, Cursor, and AI coding assistants.">
+  <meta property="og:image" content="https://ui.aceternity.com/api/og">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://k39139215-gif.github.io/bento-gallery-mcp/">
+  <meta name="twitter:title" content="Bento Gallery MCP • 20 Premier Design Engineering Libraries">
+  <meta name="twitter:description" content="Curated Bento Grid UI Components for Cursor and Claude Desktop. Real React + Tailwind code from Aceternity, Magic UI, Kokonut UI, and Cult UI.">
+  <meta name="twitter:image" content="https://ui.aceternity.com/api/og">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Bento Gallery MCP",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Model Context Protocol (MCP) server & CLI for curated Bento Grid UI components from 20 premier design engineering libraries.",
+        "url": "https://k39139215-gif.github.io/bento-gallery-mcp/",
+        "author": {
+          "@type": "Person",
+          "name": "Kartik"
+        }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "bento-gallery-mcp",
+        "codeRepository": "https://github.com/k39139215-gif/bento-gallery-mcp",
+        "programmingLanguage": "TypeScript",
+        "license": "https://opensource.org/licenses/MIT",
+        "runtimePlatform": "Node.js"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Bento Gallery MCP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bento Gallery MCP is an open-source Model Context Protocol server that allows AI coding assistants like Claude Desktop, Cursor, and Antigravity to search, query, and inject production-ready Bento Grid UI components directly from 20 top design engineering libraries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which component libraries are supported in Bento Gallery MCP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It includes Aceternity UI, Magic UI, Kokonut UI, Cult UI, motion-primitives by Ibelick, Spell.sh, Coss UI (Cal.com), Transitions.dev, Details.design, Rareblocks/Rare UI, Spectrum UI, BeUI, DaisyUI, Flowbite, Preline UI, HyperUI, Meraki UI, Tailspark, Cruip, and WickedBlocks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I install Bento Gallery MCP in Claude Desktop or Cursor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Add bento-gallery to your claude_desktop_config.json or mcp_config.json pointing to node /path/to/bento-gallery-mcp/dist/mcp.js, or run via npx."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <title>Master Bento Grid Review • 14 Living Component Libraries</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes marqueeScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 18s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+    @keyframes spinConic {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-conic-spin {
+      animation: spinConic 6s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-black text-neutral-100 antialiased min-h-screen font-sans selection:bg-indigo-500 selection:text-white">
+
+  <!-- Sticky Top Navigation Bar -->
+  <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-neutral-800/80 px-4 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 overflow-x-auto text-xs font-mono">
+      <div class="flex items-center gap-2 font-bold text-white shrink-0">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        BENTO REVIEW MASTER
+      </div>
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="#aceternity" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Aceternity</a>
+        <a href="#magicui" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Magic UI</a>
+        <a href="#kokonutui" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Kokonut UI</a>
+        <a href="#cultui" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Cult UI</a>
+        <a href="#ibelick" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Ibelick</a>
+        <a href="#spell" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Spell.sh</a>
+        <a href="#coss" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Coss UI</a>
+        <a href="#transitions" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Transitions</a>
+        <a href="#details" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Details</a>
+        <a href="#rareui" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Rare UI</a>
+        <a href="#spectrum" class="px-2.5 py-1 rounded-md bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white transition">Spectrum</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="max-w-6xl mx-auto px-4 py-12 space-y-24">
+
+    <!-- Header Hero -->
+    <header class="text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-neutral-900 text-neutral-400 border border-neutral-800">
+        All-In-One Living Component Benchmark
+      </div>
+      <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white">
+        Official Bento Grids Review
+      </h1>
+      <p class="text-neutral-400 text-sm max-w-2xl mx-auto">
+        Har component website ka exact layout, animation aur styling — bina kisi code ya visual change ke. Scroll karke har bento grid ko interactively test karo.
+      </p>
+    </header>
+
+    <!-- SECTION 1: ACETERNITY UI -->
+    <section id="aceternity" class="space-y-6 pt-4 border-t border-neutral-900">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-neutral-400">01 / OFFICIAL REGISTRY</span>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2 mt-0.5">
+            Aceternity UI • Bento Grid
+          </h2>
+        </div>
+        <a href="https://ui.aceternity.com/components/bento-grid" target="_blank" class="text-xs font-mono text-indigo-400 hover:underline flex items-center gap-1">
+          ui.aceternity.com/components/bento-grid ↗
+        </a>
+      </div>
+
+      <!-- Exact Aceternity UI 7-tile Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[16rem]">
+        
+        <!-- Tile 1 (col-span-1) -->
+        <div class="group/bento row-span-1 flex flex-col justify-between space-y-4 rounded-2xl border border-white/[0.15] bg-black p-5 transition duration-200 hover:shadow-2xl hover:border-white/30">
+          <div class="flex flex-1 w-full h-full min-h-[5rem] rounded-xl bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5"></div>
+          <div class="transition duration-200 group-hover/bento:translate-x-2">
+            <span class="text-xs text-neutral-500 font-mono">01 // CORE</span>
+            <div class="mt-1 font-bold text-neutral-200">The Dawn of Innovation</div>
+            <div class="text-xs font-normal text-neutral-400 mt-1">Explore the birth of groundbreaking ideas and inventions.</div>
+          </div>
+        </div>
+
+        <!-- Tile 2 (col-span-1) -->
+        <div class="group/bento row-span-1 flex flex-col justify-between space-y-4 rounded-2xl border border-white/[0.15] bg-black p-5 transition duration-200 hover:shadow-2xl hover:border-white/30">
+          <div class="flex flex-1 w-full h-full min-h-[5rem] rounded-xl bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5"></div>
+          <div class="transition duration-200 group-hover/bento:translate-x-2">
+            <span class="text-xs text-neutral-500 font-mono">02 // TECH</span>
+            <div class="mt-1 font-bold text-neutral-200">The Digital Revolution</div>
+            <div class="text-xs font-normal text-neutral-400 mt-1">Dive into the transformative power of modern technology.</div>
+          </div>
+        </div>
+
+        <!-- Tile 3 (col-span-1) -->
+        <div class="group/bento row-span-1 flex flex-col justify-between space-y-4 rounded-2xl border border-white/[0.15] bg-black p-5 transition duration-200 hover:shadow-2xl hover:border-white/30">
+          <div class="flex flex-1 w-full h-full min-h-[5rem] rounded-xl bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5"></div>
+          <div class="transition duration-200 group-hover/bento:translate-x-2">
+            <span class="text-xs text-neutral-500 font-mono">03 // ART</span>
+            <div class="mt-1 font-bold text-neutral-200">The Art of Design</div>
+            <div class="text-xs font-normal text-neutral-400 mt-1">Discover the beauty of thoughtful and functional interfaces.</div>
+          </div>
+        </div>
+
+        <!-- Tile 4 (col-span-2) -->
+        <div class="md:col-span-2 group/bento row-span-1 flex flex-col justify-between space-y-4 rounded-2xl border border-white/[0.15] bg-black p-5 transition duration-200 hover:shadow-2xl hover:border-white/30">
+          <div class="flex flex-1 w-full h-full min-h-[5rem] rounded-xl bg-gradient-to-br from-neutral-900 via-indigo-950/20 to-neutral-800 border border-white/5 flex items-center justify-center font-mono text-xs text-neutral-500">
+            [Aceternity Skeleton Wave]
+          </div>
+          <div class="transition duration-200 group-hover/bento:translate-x-2">
+            <span class="text-xs text-neutral-500 font-mono">04 // NETWORK</span>
+            <div class="mt-1 font-bold text-neutral-200 text-lg">The Power of Communication</div>
+            <div class="text-xs font-normal text-neutral-400 mt-1">Understand the impact of seamless and effective communication across global teams.</div>
+          </div>
+        </div>
+
+        <!-- Tile 5 (col-span-1) -->
+        <div class="group/bento row-span-1 flex flex-col justify-between space-y-4 rounded-2xl border border-white/[0.15] bg-black p-5 transition duration-200 hover:shadow-2xl hover:border-white/30">
+          <div class="flex flex-1 w-full h-full min-h-[5rem] rounded-xl bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5"></div>
+          <div class="transition duration-200 group-hover/bento:translate-x-2">
+            <span class="text-xs text-neutral-500 font-mono">05 // WISDOM</span>
+            <div class="mt-1 font-bold text-neutral-200">Pursuit of Knowledge</div>
+            <div class="text-xs font-normal text-neutral-400 mt-1">Join the quest for understanding and enlightenment.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: MAGIC UI -->
+    <section id="magicui" class="space-y-6 pt-4 border-t border-neutral-900">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-neutral-400">02 / OFFICIAL REGISTRY</span>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2 mt-0.5">
+            Magic UI • Bento Grid & Bento Card
+          </h2>
+        </div>
+        <a href="https://magicui.design/docs/components/bento-grid" target="_blank" class="text-xs font-mono text-sky-400 hover:underline flex items-center gap-1">
+          magicui.design/docs/components/bento-grid ↗
+        </a>
+      </div>
+
+      <!-- Exact Magic UI Bento Grid (4-card layout) -->
+      <div class="grid w-full grid-cols-1 lg:grid-cols-3 gap-4 auto-rows-[20rem]">
+        
+        <!-- Card 1: Save Your Files (col-span-1) with Marquee -->
+        <div class="group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-2xl bg-neutral-950 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-white/10 transition-all duration-300">
+          <!-- Marquee strip background -->
+          <div class="absolute inset-x-0 top-4 overflow-hidden [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)]">
+            <div class="animate-marquee gap-3 py-2">
+              <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">bitcoin.pdf</span>
+              <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">finances.xlsx</span>
+              <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">logo.svg</span>
+              <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">keys.gpg</span>
+              <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">seed.txt</span>
+              <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">bitcoin.pdf</span>
+              <span class="px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-xs font-mono text-neutral-300">finances.xlsx</span>
+            </div>
+          </div>
+
+          <div class="p-6 relative z-10 transition-all duration-300 lg:group-hover:-translate-y-6">
+            <div class="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-lg mb-3">📄</div>
+            <h3 class="text-lg font-semibold text-neutral-200">Save your files</h3>
+            <p class="text-xs text-neutral-400 mt-1">We automatically sync and save your assets as you type.</p>
+          </div>
+
+          <div class="p-6 pt-0 relative z-10 flex items-center gap-1 text-xs font-mono text-sky-400 transition-all duration-300 lg:opacity-0 lg:translate-y-4 lg:group-hover:opacity-100 lg:group-hover:translate-y-0">
+            Learn more →
+          </div>
+        </div>
+
+        <!-- Card 2: Notifications (col-span-2) -->
+        <div class="group relative col-span-1 lg:col-span-2 flex flex-col justify-between overflow-hidden rounded-2xl bg-neutral-950 [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-white/10 transition-all duration-300">
+          <div class="absolute top-4 right-4 w-72 space-y-2 opacity-80 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)]">
+            <div class="p-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-xs flex items-center justify-between">
+              <span class="text-neutral-300">Deployment succeeded</span>
+              <span class="text-emerald-400 font-mono text-[11px]">Just now</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-xs flex items-center justify-between">
+              <span class="text-neutral-300">Payment received ($48.00)</span>
+              <span class="text-neutral-500 font-mono text-[11px]">2m ago</span>
+            </div>
+          </div>
+
+          <div class="p-6 relative z-10 transition-all duration-300 lg:group-hover:-translate-y-6">
+            <div class="w-10 h-10 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-lg mb-3">🔔</div>
+            <h3 class="text-lg font-semibold text-neutral-200">Real-Time Notifications</h3>
+            <p class="text-xs text-neutral-400 mt-1 max-w-sm">Get notified immediately when critical events fire across your stack.</p>
+          </div>
+
+          <div class="p-6 pt-0 relative z-10 flex items-center gap-1 text-xs font-mono text-sky-400 transition-all duration-300 lg:opacity-0 lg:translate-y-4 lg:group-hover:opacity-100 lg:group-hover:translate-y-0">
+            View notification channels →
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: KOKONUT UI -->
+    <section id="kokonutui" class="space-y-6 pt-4 border-t border-neutral-900">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-neutral-400">03 / OFFICIAL GITHUB REPO</span>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2 mt-0.5">
+            Kokonut UI • Widget Grid
+          </h2>
+        </div>
+        <a href="https://github.com/kokonut-labs/kokonutui" target="_blank" class="text-xs font-mono text-fuchsia-400 hover:underline flex items-center gap-1">
+          github.com/kokonut-labs/kokonutui ↗
+        </a>
+      </div>
+
+      <!-- Kokonut UI Widget Grid Implementation -->
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+        
+        <!-- Activity Widget (col-span-4) -->
+        <div class="col-span-1 md:col-span-4 rounded-2xl bg-neutral-950 border border-neutral-800 p-6 flex flex-col justify-between hover:border-fuchsia-500/50 transition duration-300">
+          <div class="flex items-center justify-between pb-3 border-b border-neutral-800">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-fuchsia-500 animate-pulse"></span>
+              <span class="text-xs font-mono text-fuchsia-400 uppercase font-semibold">Activity Telemetry</span>
+            </div>
+            <span class="text-xs font-mono text-neutral-500">Live 60s stream</span>
+          </div>
+          
+          <div class="my-6 grid grid-cols-4 gap-3 text-center">
+            <div class="p-3 rounded-xl bg-neutral-900 border border-neutral-800">
+              <div class="text-2xl font-bold font-mono text-white">99.8%</div>
+              <div class="text-[11px] text-neutral-400 mt-1">Uptime SLA</div>
+            </div>
+            <div class="p-3 rounded-xl bg-neutral-900 border border-neutral-800">
+              <div class="text-2xl font-bold font-mono text-fuchsia-400">14.2k</div>
+              <div class="text-[11px] text-neutral-400 mt-1">Active Users</div>
+            </div>
+            <div class="p-3 rounded-xl bg-neutral-900 border border-neutral-800">
+              <div class="text-2xl font-bold font-mono text-white">1.2ms</div>
+              <div class="text-[11px] text-neutral-400 mt-1">Avg Ping</div>
+            </div>
+            <div class="p-3 rounded-xl bg-neutral-900 border border-neutral-800">
+              <div class="text-2xl font-bold font-mono text-emerald-400">0.00%</div>
+              <div class="text-[11px] text-neutral-400 mt-1">Error Rate</div>
+            </div>
+          </div>
+
+          <div class="flex justify-between text-xs font-mono text-neutral-500">
+            <span>Kokonut Widget Grid v3.0</span>
+            <span>By @dorianbaffier</span>
+          </div>
+        </div>
+
+        <!-- Storage Widget (col-span-2) -->
+        <div class="col-span-1 md:col-span-2 rounded-2xl bg-neutral-950 border border-neutral-800 p-6 flex flex-col justify-between hover:border-fuchsia-500/50 transition duration-300">
+          <div>
+            <span class="text-xs font-mono text-neutral-400 uppercase">Capacity</span>
+            <h3 class="text-xl font-bold text-white mt-1">Storage Node</h3>
+            <p class="text-xs text-neutral-400 mt-2">640 GB of 1 TB used across regional volumes.</p>
+          </div>
+          <div class="my-4">
+            <div class="w-full h-3 bg-neutral-900 rounded-full overflow-hidden p-0.5 border border-neutral-800">
+              <div class="h-full bg-gradient-to-r from-fuchsia-500 to-violet-600 rounded-full w-[64%]"></div>
+            </div>
+          </div>
+          <span class="text-[11px] font-mono text-fuchsia-400">64% Volume Full</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: CULT UI -->
+    <section id="cultui" class="space-y-6 pt-4 border-t border-neutral-900">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-neutral-400">04 / OFFICIAL REGISTRY</span>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2 mt-0.5">
+            Cult UI • Shift Card & Shader Halo
+          </h2>
+        </div>
+        <a href="https://www.cult-ui.com/docs/components/shift-card" target="_blank" class="text-xs font-mono text-cyan-400 hover:underline flex items-center gap-1">
+          cult-ui.com/docs/components/shift-card ↗
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        
+        <!-- Cult UI Conic Shader Halo -->
+        <div class="col-span-1 md:col-span-2 relative p-0.5 rounded-3xl overflow-hidden group">
+          <div class="absolute inset-0 bg-[conic-gradient(from_0deg,#06b6d4,#3b82f6,#8b5cf6,#06b6d4)] animate-conic-spin opacity-80 blur-sm group-hover:opacity-100 transition duration-500"></div>
+          <div class="relative h-full rounded-[23px] bg-neutral-950 p-7 flex flex-col justify-between">
+            <div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800">
+                Cult UI • Conic Halo
+              </span>
+              <h3 class="text-2xl font-bold text-white mt-3">Continuous Laser Perimeter Light</h3>
+              <p class="text-xs text-neutral-400 mt-2 max-w-md leading-relaxed">
+                Hardware-accelerated conic gradient rotation creates an electric perimeter border effect without heavy WebGL canvas overhead.
+              </p>
+            </div>
+            <div class="mt-8 pt-3 border-t border-neutral-800 flex justify-between text-xs font-mono text-neutral-400">
+              <span>Pure CSS GPU Composited</span>
+              <span class="text-cyan-400">cult-ui.com</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cult UI Shift Card Implementation -->
+        <div 
+          id="cultShiftCard"
+          class="col-span-1 rounded-3xl bg-neutral-950 border border-neutral-800 p-6 flex flex-col justify-between cursor-pointer group hover:border-cyan-500/50 transition-all duration-300 shadow-[0_1px_0_0_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(255,255,255,0.03)_inset,0_2px_4px_0_rgba(0,0,0,0.5)]"
+        >
+          <div>
+            <span class="text-xs font-mono text-neutral-400 uppercase">Hover to Shift</span>
+            <h3 class="text-lg font-bold text-white mt-1">Cult UI Shift Card</h3>
+            <p class="text-xs text-neutral-400 mt-2">Smoothly slides open secondary content drawer.</p>
+          </div>
+
+          <div id="cultDrawer" class="h-10 overflow-hidden transition-all duration-300 group-hover:h-28 bg-neutral-900 rounded-xl p-3 border border-neutral-800 mt-4 text-xs font-mono text-cyan-300 flex flex-col justify-between">
+            <div>Hover triggered!</div>
+            <div class="text-[11px] text-neutral-400">Height morphs from 38px to 194px with circIn easing.</div>
+          </div>
+
+          <div class="text-[11px] text-neutral-500 font-mono mt-4">By @nolly-studio</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: IBELICK (MOTION-PRIMITIVES) -->
+    <section id="ibelick" class="space-y-6 pt-4 border-t border-neutral-900">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-neutral-400">05 / OFFICIAL REPO</span>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2 mt-0.5">
+            Ibelick UI • Tilt & Radial Spotlight
+          </h2>
+        </div>
+        <a href="https://motion-primitives.com/docs/tilt" target="_blank" class="text-xs font-mono text-neutral-300 hover:underline flex items-center gap-1">
+          motion-primitives.com/docs/tilt ↗
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        
+        <!-- Ibelick Official Tilt Card -->
+        <div 
+          id="ibelickTilt"
+          class="rounded-3xl bg-neutral-950 border border-white/10 p-8 flex flex-col justify-between cursor-pointer transition-all duration-150 relative overflow-hidden"
+          style="transform-style: preserve-3d;"
+        >
+          <div class="relative z-10" style="transform: translateZ(20px);">
+            <span class="text-xs font-mono text-neutral-400 uppercase">Julien Thibeaut (@ibelick)</span>
+            <h3 class="text-2xl font-bold text-white mt-2">Perspective Tilt Primitive</h3>
+            <p class="text-xs text-neutral-400 mt-2 max-w-sm">
+              Authored with <code>useMotionTemplate</code> and spring damping for ultra-refined physical mass.
+            </p>
+          </div>
+          <div class="relative z-10 mt-8 pt-4 border-t border-white/10 flex justify-between text-xs font-mono text-neutral-400">
+            <span>rotationFactor = 15</span>
+            <span class="text-neutral-200">motion-primitives.com</span>
+          </div>
+        </div>
+
+        <!-- Ibelick Official Spotlight Follower -->
+        <div 
+          id="ibelickSpotlight"
+          class="rounded-3xl bg-neutral-950 border border-white/10 p-8 flex flex-col justify-between relative overflow-hidden cursor-pointer"
+        >
+          <div id="ibelickGlow" class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-200"></div>
+          <div class="relative z-10">
+            <span class="text-xs font-mono text-neutral-400 uppercase">Radial Spotlight</span>
+            <h3 class="text-2xl font-bold text-white mt-2">Hairline Glow Blur</h3>
+            <p class="text-xs text-neutral-400 mt-2 max-w-sm">
+              Radial gradient follower casting a soft, quiet glow across minimalist dark panels.
+            </p>
+          </div>
+          <div class="relative z-10 mt-8 pt-4 border-t border-white/10 flex justify-between text-xs font-mono text-neutral-400">
+            <span>Quiet Aesthetic</span>
+            <span class="text-neutral-200">ui.ibelick.com</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: SPELL.SH -->
+    <section id="spell" class="space-y-6 pt-4 border-t border-neutral-900">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-neutral-400">06 / COMPONENT STUDIO</span>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2 mt-0.5">
+            Spell.sh • 3D Spatial Glare
+          </h2>
+        </div>
+        <a href="https://spell.sh" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline flex items-center gap-1">
+          spell.sh ↗
+        </a>
+      </div>
+
+      <div 
+        id="spellCardLive"
+        class="rounded-3xl bg-neutral-900/90 border border-neutral-800 p-8 overflow-hidden cursor-pointer relative shadow-2xl transition-all duration-150"
+        style="transform-style: preserve-3d;"
+      >
+        <div id="spellGlareLive" class="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300"></div>
+        <div class="relative z-10 flex flex-col justify-between min-h-[180px]" style="transform: translateZ(25px);">
+          <div>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-950 text-emerald-300 border border-emerald-800/80">
+              Spell.sh Spatial Engine
+            </span>
+            <h3 class="text-3xl font-extrabold text-white mt-3">Photorealistic Specular Reflection</h3>
+            <p class="text-xs text-neutral-400 mt-2 max-w-lg">
+              Calculates specular radial glare sheen responding directly to pointer distance and angle of incidence.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-neutral-800 flex justify-between text-xs font-mono text-neutral-400">
+            <span>Hover pointer across this card</span>
+            <span class="text-emerald-400">translateZ(25px) Parallax</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: COSS UI (BROWSE PARTICLES) -->
+    <section id="coss" class="space-y-6 pt-4 border-t border-neutral-900">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-mono text-neutral-400">07 / CANVAS PHYSICS</span>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2 mt-0.5">
+            Coss UI • Interactive Particle Constellation
+          </h2>
+        </div>
+        <a href="https://coss.so" target="_blank" class="text-xs font-mono text-purple-400 hover:underline flex items-center gap-1">
+          coss.so ↗
+        </a>
+      </div>
+
+      <div class="rounded-3xl bg-neutral-950 border border-neutral-800 p-6">
+        <div class="flex items-center justify-between mb-3 text-xs font-mono text-neutral-400">
+          <span>HTML5 Canvas 2D Mesh</span>
+          <span class="text-purple-400">Pointer Proximity Attraction</span>
+        </div>
+        <div class="w-full h-56 rounded-2xl bg-black border border-neutral-800 overflow-hidden relative">
+          <canvas id="cossCanvasLive" class="w-full h-full block cursor-crosshair"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: DETAILS.DESIGN, TRANSITIONS.DEV, RARE UI, SPECTRUM UI -->
+    <section class="space-y-6 pt-4 border-t border-neutral-900">
+      <h2 class="text-2xl font-bold text-white">More Curated Design Component Studios</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- Transitions.dev -->
+        <div id="transDevCard" class="rounded-2xl bg-neutral-950 border border-neutral-800 p-5 flex flex-col justify-between hover:border-indigo-500/50 transition cursor-pointer">
+          <div>
+            <span class="text-[11px] font-mono text-indigo-400 uppercase">transitions.dev</span>
+            <h3 class="text-base font-bold text-white mt-1">Morphing Layout</h3>
+            <p class="text-[12px] text-neutral-400 mt-1">Spring physics state expansion.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-neutral-800 flex justify-between text-[11px] font-mono text-neutral-500">
+            <span>Click to morph</span>
+            <span class="text-indigo-400">Active</span>
+          </div>
+        </div>
+
+        <!-- Details.design -->
+        <div class="rounded-2xl bg-neutral-950 border border-neutral-800 p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-[11px] font-mono text-amber-400 uppercase">details.design</span>
+            <h3 class="text-base font-bold text-white mt-1">Hardware Switch</h3>
+            <p class="text-[12px] text-neutral-400 mt-1">Mechanical toggle feedback.</p>
+          </div>
+          <div class="my-3 flex items-center justify-between">
+            <span class="text-xs text-neutral-300 font-mono">Toggle</span>
+            <button id="detailsLiveBtn" class="w-12 h-6 rounded-full p-0.5 bg-amber-500 transition-colors">
+              <div id="detailsLiveKnob" class="w-5 h-5 bg-white rounded-full transition-transform translate-x-6"></div>
+            </button>
+          </div>
+          <div class="text-[11px] font-mono text-neutral-500">Tactile craft</div>
+        </div>
+
+        <!-- Rare UI -->
+        <div class="rounded-2xl bg-neutral-950 border border-neutral-800 p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-[11px] font-mono text-emerald-400 uppercase">rareblocks.xyz</span>
+            <h3 class="text-base font-bold text-white mt-1">SaaS Telemetry</h3>
+            <div class="text-xl font-bold font-mono text-white mt-2">1.24B</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-neutral-800 flex justify-between text-[11px] font-mono text-neutral-400">
+            <span class="text-emerald-400">+24.8% MoM</span>
+            <span>99.99% SLA</span>
+          </div>
+        </div>
+
+        <!-- Spectrum UI -->
+        <div class="rounded-2xl bg-neutral-950 border border-neutral-800 p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-[11px] font-mono text-blue-400 uppercase">spectrum-ui.dev</span>
+            <h3 class="text-base font-bold text-white mt-1">Cybernetic HUD</h3>
+            <div class="text-xl font-bold font-mono text-blue-400 mt-2">4.2ms</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-neutral-800 flex justify-between text-[11px] font-mono text-neutral-400">
+            <span>mTLS 1.3</span>
+            <span class="text-emerald-400">ONLINE</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Interactive JavaScript Engine -->
+  <script>
+    // 1. Ibelick Tilt
+    const ibelickTilt = document.getElementById('ibelickTilt');
+    ibelickTilt.addEventListener('mousemove', (e) => {
+      const r = ibelickTilt.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2;
+      const y = e.clientY - r.top - r.height / 2;
+      const rx = (y / (r.height / 2)) * -15;
+      const ry = (x / (r.width / 2)) * 15;
+      ibelickTilt.style.transform = `perspective(1000px) rotateX(${rx.toFixed(1)}deg) rotateY(${ry.toFixed(1)}deg)`;
+    });
+    ibelickTilt.addEventListener('mouseleave', () => {
+      ibelickTilt.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+    });
+
+    // 2. Ibelick Spotlight
+    const ibelickSpotlight = document.getElementById('ibelickSpotlight');
+    const ibelickGlow = document.getElementById('ibelickGlow');
+    ibelickSpotlight.addEventListener('mousemove', (e) => {
+      const r = ibelickSpotlight.getBoundingClientRect();
+      const x = e.clientX - r.left;
+      const y = e.clientY - r.top;
+      ibelickGlow.style.opacity = '1';
+      ibelickGlow.style.background = `radial-gradient(350px circle at ${x}px ${y}px, rgba(255,255,255,0.08), transparent 60%)`;
+    });
+    ibelickSpotlight.addEventListener('mouseleave', () => {
+      ibelickGlow.style.opacity = '0';
+    });
+
+    // 3. Spell.sh 3D Glare
+    const spellCard = document.getElementById('spellCardLive');
+    const spellGlare = document.getElementById('spellGlareLive');
+    spellCard.addEventListener('mousemove', (e) => {
+      const r = spellCard.getBoundingClientRect();
+      const x = e.clientX - r.left;
+      const y = e.clientY - r.top;
+      const rx = (((y - r.height / 2) / (r.height / 2)) * -12).toFixed(1);
+      const ry = (((x - r.width / 2) / (r.width / 2)) * 12).toFixed(1);
+      spellCard.style.transform = `perspective(1000px) rotateX(${rx}deg) rotateY(${ry}deg) scale3d(1.01, 1.01, 1.01)`;
+      spellGlare.style.opacity = '1';
+      spellGlare.style.background = `radial-gradient(400px circle at ${x}px ${y}px, rgba(16, 185, 129, 0.22), transparent 50%)`;
+    });
+    spellCard.addEventListener('mouseleave', () => {
+      spellCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      spellGlare.style.opacity = '0';
+    });
+
+    // 4. Coss UI Canvas
+    const canvas = document.getElementById('cossCanvasLive');
+    const ctx = canvas.getContext('2d');
+    let w = canvas.width = canvas.parentElement.clientWidth || 500;
+    let h = canvas.height = 224;
+    let mouse = { x: -1000, y: -1000 };
+    canvas.addEventListener('mousemove', (e) => {
+      const r = canvas.getBoundingClientRect();
+      mouse.x = e.clientX - r.left;
+      mouse.y = e.clientY - r.top;
+    });
+    canvas.addEventListener('mouseleave', () => { mouse.x = -1000; mouse.y = -1000; });
+
+    const pts = Array.from({ length: 45 }, () => ({
+      x: Math.random() * w, y: Math.random() * h,
+      vx: (Math.random() - 0.5) * 0.9, vy: (Math.random() - 0.5) * 0.9
+    }));
+
+    function loop() {
+      ctx.clearRect(0, 0, w, h);
+      for (let i = 0; i < pts.length; i++) {
+        for (let j = i + 1; j < pts.length; j++) {
+          const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 65) {
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(168, 85, 247, ${1 - dist / 65})`;
+            ctx.lineWidth = 0.6;
+            ctx.moveTo(pts[i].x, pts[i].y);
+            ctx.lineTo(pts[j].x, pts[j].y);
+            ctx.stroke();
+          }
+        }
+        const mdx = pts[i].x - mouse.x, mdy = pts[i].y - mouse.y;
+        const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+        if (mdist < 80) {
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(236, 72, 153, ${1 - mdist / 80})`;
+          ctx.lineWidth = 1;
+          ctx.moveTo(pts[i].x, pts[i].y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.stroke();
+        }
+      }
+      pts.forEach(p => {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > w) p.vx *= -1;
+        if (p.y < 0 || p.y > h) p.vy *= -1;
+        ctx.beginPath(); ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+        ctx.fillStyle = '#c084fc'; ctx.fill();
+      });
+      requestAnimationFrame(loop);
+    }
+    loop();
+
+    // 5. Details Toggle
+    const toggleBtn = document.getElementById('detailsLiveBtn');
+    const knob = document.getElementById('detailsLiveKnob');
+    let on = true;
+    toggleBtn.addEventListener('click', () => {
+      on = !on;
+      toggleBtn.className = on ? 'w-12 h-6 rounded-full p-0.5 bg-amber-500 transition-colors' : 'w-12 h-6 rounded-full p-0.5 bg-neutral-800 transition-colors';
+      knob.className = on ? 'w-5 h-5 bg-white rounded-full transition-transform translate-x-6' : 'w-5 h-5 bg-white rounded-full transition-transform translate-x-0';
+    });
+  </script>
+</body>
+</html>
