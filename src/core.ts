@@ -4,11 +4,11 @@ import { CURATED_BENTO_GRIDS } from './curated.js';
 export const CATEGORIES_DATA: Record<BentoCategory, { name: string; description: string }> = {
   'animated-motion': {
     name: 'Animated & Fluid Motion',
-    description: 'Dynamic layout transitions, living tech marquees, morphing expansion tiles, and mechanical spring switches.',
+    description: 'Dynamic layout transitions, living tech marquees, morphing expansion tiles, gradient trails, and spring switches.',
   },
   'spotlight-shaders': {
     name: 'Spotlight & Shader Halos',
-    description: 'Cursor-following radial light cones, rotating conic shader borders, and ambient reactive glow fields.',
+    description: 'Cursor-following radial light cones, rotating conic shader borders, shimmering edges, and ambient reactive glow fields.',
   },
   '3d-spatial': {
     name: '3D Spatial Perspective',
@@ -20,7 +20,11 @@ export const CATEGORIES_DATA: Record<BentoCategory, { name: string; description:
   },
   'minimal-blocks': {
     name: 'Minimal & Modular Blocks',
-    description: 'Clean SaaS feature matrices, mathematical 12-column asymmetric grids, and frosted glass panels.',
+    description: 'Clean SaaS feature matrices, mathematical 12-column asymmetric grids, accessible Radix primitives, and frosted glass.',
+  },
+  'interactive-widgets': {
+    name: 'Interactive Developer Widgets',
+    description: 'Live CLI terminal consoles, GitHub commit activity heatmaps, and interactive parameter sliders.',
   },
 };
 
@@ -85,6 +89,46 @@ export const SOURCES_DATA: Record<BentoSource, { name: string; description: stri
     description: 'Cursor-following radial spotlight borders, neon shader glows, and glassmorphic card panels.',
     website: 'https://ui.aceternity.com',
   },
+  '21st-dev': {
+    name: '21st.dev (Design Engineers Registry)',
+    description: 'Design engineering community bento grid with live CLI terminal console and GitHub commit heatmap.',
+    website: 'https://21st.dev',
+  },
+  kokonutui: {
+    name: 'Kokonut UI',
+    description: 'Vibrant animated gradient trail highlights, micro-toggles, and reactive widget cards.',
+    website: 'https://kokonutui.com',
+  },
+  originui: {
+    name: 'Origin UI',
+    description: 'Accessible Radix UI micro-primitives, accessible range sliders, and keyboard-focusable switches.',
+    website: 'https://originui.com',
+  },
+  'hover-dev': {
+    name: 'Hover.dev',
+    description: 'Spring physics hover bounce cards and magnetic cursor attraction pills.',
+    website: 'https://hover.dev',
+  },
+  ibelick: {
+    name: 'Ibelick UI (Julien Thibeaut)',
+    description: 'Minimalist dark aesthetic, hairline 1px borders, quiet typography, and subtle ambient radiance.',
+    website: 'https://ui.ibelick.com',
+  },
+  'syntax-ui': {
+    name: 'Syntax UI',
+    description: 'Shimmering light sweep gradient border animations and live metric counters.',
+    website: 'https://syntaxui.com',
+  },
+  bentoui: {
+    name: 'BentoUI.dev',
+    description: 'Dedicated Tailwind bento grid components specialized for SaaS conversion and metrics.',
+    website: 'https://bentoui.dev',
+  },
+  bentogrids: {
+    name: 'Bentogrids.com Gallery',
+    description: 'Curated Swiss typographic layout bento grids with 12-column baseline rhythms.',
+    website: 'https://bentogrids.com',
+  },
 };
 
 export function listCategories(): BentoCategoryInfo[] {
@@ -122,7 +166,7 @@ export function listGrids(options: {
   page?: number;
   limit?: number;
 } = {}): { total: number; page: number; limit: number; grids: BentoItem[] } {
-  const { category, source, page = 1, limit = 20 } = options;
+  const { category, source, page = 1, limit = 50 } = options;
 
   let results = [...CURATED_BENTO_GRIDS];
 

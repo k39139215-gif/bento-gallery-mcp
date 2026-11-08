@@ -15,12 +15,12 @@ const [,, cmd, ...args] = process.argv;
 function printHelp() {
   console.log(`
 🍱 Bento Gallery CLI 🍱
-Curated Bento Grid Components from Premier Design Engineering Libraries:
-Spell.sh, Rare UI, Transitions.dev, Cult UI, Coss UI, Spectrum UI, UseLayout, Details.design, BeUI, Affect UI, Magic UI, Aceternity UI.
+Curated Bento Grid Components from 20 Premier Design Engineering Libraries:
+Spell.sh, Rare UI, Transitions.dev, Cult UI, Coss UI, Spectrum UI, UseLayout, Details.design, BeUI, Affect UI, Magic UI, Aceternity UI, 21st.dev, Kokonut UI, Origin UI, Hover.dev, Ibelick UI, Syntax UI, BentoUI.dev, Bentogrids.com.
 
 Commands:
   categories              List all component bento categories
-  sources                 List all component libraries & design websites
+  sources                 List all 20 component libraries & design websites
   list [category]         List bento grids (optional category filter)
   search <query>          Search bento grids by keyword, library, or feature
   view <slug>             View details and tile layout of a bento grid
@@ -29,10 +29,10 @@ Commands:
 Examples:
   node dist/cli.js categories
   node dist/cli.js sources
-  node dist/cli.js list spotlight-shaders
-  node dist/cli.js search particles
-  node dist/cli.js view cult-ui-shader-bento
-  node dist/cli.js code spell-spatial-tilt-bento
+  node dist/cli.js list interactive-widgets
+  node dist/cli.js search terminal
+  node dist/cli.js view 21st-dev-terminal-bento
+  node dist/cli.js code kokonutui-glowing-bento
 `);
 }
 
@@ -49,7 +49,7 @@ switch (cmd) {
 
   case 'sources': {
     const sources = listSources();
-    console.log('\n🌟 Component Libraries & Design Websites:\n');
+    console.log('\n🌟 20 Premier Component Libraries & Design Toolkits:\n');
     sources.forEach((s) => {
       console.log(`• \x1b[33m${s.name}\x1b[0m [\x1b[36m${s.id}\x1b[0m] (${s.count} bento components) - ${s.website}`);
       console.log(`  \x1b[90m${s.description}\x1b[0m\n`);

@@ -24,6 +24,7 @@ const categoryEnum = z.enum([
   "3d-spatial",
   "particles-canvas",
   "minimal-blocks",
+  "interactive-widgets",
 ]);
 
 const sourceEnum = z.enum([
@@ -39,6 +40,14 @@ const sourceEnum = z.enum([
   "affect-ui",
   "magicui",
   "aceternity",
+  "21st-dev",
+  "kokonutui",
+  "originui",
+  "hover-dev",
+  "ibelick",
+  "syntax-ui",
+  "bentoui",
+  "bentogrids",
 ]);
 
 const json = (data: unknown) => ({
@@ -53,7 +62,7 @@ const fail = (e: unknown) => ({
 server.registerTool(
   "list_categories",
   {
-    description: "List all curated Bento Grid categories (animated-motion, spotlight-shaders, 3d-spatial, particles-canvas, minimal-blocks) with component counts.",
+    description: "List all curated Bento Grid categories (animated-motion, spotlight-shaders, 3d-spatial, particles-canvas, minimal-blocks, interactive-widgets) with component counts.",
     inputSchema: {},
   },
   async () => json(listCategories())
@@ -62,7 +71,7 @@ server.registerTool(
 server.registerTool(
   "list_sources",
   {
-    description: "List all component design engineering websites and libraries (Spell.sh, Rare UI, Transitions.dev, Cult UI, Coss UI, Spectrum UI, UseLayout, Details.design, BeUI, Affect UI, Magic UI, Aceternity UI).",
+    description: "List all 20 premier component design engineering websites and libraries (Spell.sh, Rare UI, Transitions.dev, Cult UI, Coss UI, Spectrum UI, UseLayout, Details.design, BeUI, Affect UI, Magic UI, Aceternity UI, 21st.dev, Kokonut UI, Origin UI, Hover.dev, Ibelick UI, Syntax UI, BentoUI.dev, Bentogrids.com).",
     inputSchema: {},
   },
   async () => json(listSources())
@@ -76,7 +85,7 @@ server.registerTool(
       category: categoryEnum.optional(),
       source: sourceEnum.optional(),
       page: z.number().int().min(1).default(1),
-      limit: z.number().int().min(1).max(50).default(20),
+      limit: z.number().int().min(1).max(50).default(50),
     },
   },
   async ({ category, source, page, limit }) => {
@@ -98,9 +107,9 @@ server.registerTool(
 server.registerTool(
   "search_grids",
   {
-    description: "Search Bento Grids across titles, descriptions, features, tags, and component libraries.",
+    description: "Search Bento Grids across titles, descriptions, features, tags, and 20 component libraries.",
     inputSchema: {
-      query: z.string().describe("Search keyword, e.g. 'particles', 'shader', '3d tilt', 'transitions', 'rare', 'spotlight'"),
+      query: z.string().describe("Search keyword, e.g. 'particles', 'shader', '3d tilt', 'terminal', 'kokonut', 'radix', 'spotlight'"),
       category: categoryEnum.optional(),
     },
   },
@@ -118,7 +127,7 @@ server.registerTool(
   {
     description: "Get detailed information, tile composition summary, and features of a specific Bento Grid by slug.",
     inputSchema: {
-      slug: z.string().describe("Slug of the bento grid (e.g. 'spell-spatial-tilt-bento', 'cult-ui-shader-bento', 'coss-ui-particles-bento')"),
+      slug: z.string().describe("Slug of the bento grid (e.g. 'spell-spatial-tilt-bento', '21st-dev-terminal-bento', 'kokonutui-glowing-bento')"),
     },
   },
   async ({ slug }) => {
@@ -139,7 +148,7 @@ server.registerTool(
   {
     description: "Retrieve full, production-ready, copy-pasteable React + Tailwind CSS code for a specified Bento Grid.",
     inputSchema: {
-      slug: z.string().describe("Slug of the bento grid (e.g. 'spell-spatial-tilt-bento', 'cult-ui-shader-bento', 'rare-ui-feature-bento')"),
+      slug: z.string().describe("Slug of the bento grid (e.g. 'spell-spatial-tilt-bento', '21st-dev-terminal-bento', 'kokonutui-glowing-bento')"),
     },
   },
   async ({ slug }) => {

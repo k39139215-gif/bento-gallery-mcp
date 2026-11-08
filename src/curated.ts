@@ -1,6 +1,7 @@
 import { BentoItem } from './types.js';
 
 export const CURATED_BENTO_GRIDS: BentoItem[] = [
+  // 1. Spell.sh
   {
     slug: 'spell-spatial-tilt-bento',
     title: 'Spell.sh 3D Perspective Tilt Bento Card',
@@ -123,6 +124,8 @@ export default function SpellTiltBento() {
   );
 }`
   },
+
+  // 2. Cult UI
   {
     slug: 'cult-ui-shader-bento',
     title: 'Cult UI Glowing Shader Border Bento',
@@ -140,9 +143,7 @@ export default function SpellTiltBento() {
     ],
     tilesSummary: [
       { title: 'Conic Shader Halo', subtitle: 'Perimeter gradient light rotating around border', colSpan: 'col-span-1 md:col-span-2', highlight: 'Animated Halo Mask' },
-      { title: 'Dark Glass Panel', subtitle: 'Semi-opaque surface with backdrop filter blur', colSpan: 'col-span-1', highlight: 'Glassmorphic Depth' },
-      { title: 'Cyber Pulse Dial', subtitle: 'Animated neon status indicator', colSpan: 'col-span-1', highlight: 'Neon Pulse Tag' },
-      { title: 'Full Responsive Matrix', subtitle: 'Adapts smoothly from mobile stack to 3-column widescreen', colSpan: 'col-span-1 md:col-span-2', highlight: 'Fluid Grid Layout' }
+      { title: 'Dark Glass Panel', subtitle: 'Semi-opaque surface with backdrop filter blur', colSpan: 'col-span-1', highlight: 'Glassmorphic Depth' }
     ],
     code: `import React from 'react';
 
@@ -155,10 +156,7 @@ export default function CultUiShaderBento() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        
-        {/* Tile 1: Conic Halo Card (Hero 2-cols) */}
         <div className="col-span-1 md:col-span-2 relative p-0.5 rounded-3xl overflow-hidden group">
-          {/* Animated Conic Gradient Border */}
           <div className="absolute inset-0 bg-[conic-gradient(from_0deg,#06b6d4,#3b82f6,#8b5cf6,#06b6d4)] animate-spin [animation-duration:6s] opacity-75 blur-sm group-hover:opacity-100 transition duration-500" />
           <div className="relative h-full rounded-[23px] bg-neutral-950 p-7 flex flex-col justify-between">
             <div>
@@ -167,7 +165,7 @@ export default function CultUiShaderBento() {
               </span>
               <h3 className="text-2xl font-bold text-white mt-4">Continuous Perimeter Light Mask</h3>
               <p className="text-neutral-400 text-xs mt-2 max-w-md">
-                Pure CSS conic gradient creates a continuous animated laser glow around the card perimeter without heavy canvas dependencies.
+                Pure CSS conic gradient creates a continuous animated laser glow around the card perimeter.
               </p>
             </div>
             <div className="mt-8 flex items-center justify-between text-xs font-mono text-neutral-400 border-t border-neutral-800 pt-3">
@@ -177,7 +175,6 @@ export default function CultUiShaderBento() {
           </div>
         </div>
 
-        {/* Tile 2: Glass Panel */}
         <div className="col-span-1 rounded-3xl bg-neutral-950 border border-neutral-800 p-6 flex flex-col justify-between hover:border-cyan-500/50 transition duration-300">
           <div>
             <span className="text-xs font-mono text-neutral-400">OPTICAL CRYSTAL</span>
@@ -188,12 +185,13 @@ export default function CultUiShaderBento() {
             backdrop-blur: 16px
           </div>
         </div>
-
       </div>
     </section>
   );
 }`
   },
+
+  // 3. Rare UI
   {
     slug: 'rare-ui-feature-bento',
     title: 'Rare UI Modular SaaS Feature Bento Matrix',
@@ -211,9 +209,7 @@ export default function CultUiShaderBento() {
     ],
     tilesSummary: [
       { title: 'Core Analytics Engine', subtitle: 'Automated data ingestion with real-time aggregation', colSpan: 'col-span-1 md:col-span-2', highlight: 'Live Metric Sparkline' },
-      { title: 'Global Edge Sync', subtitle: 'Multi-region synchronization with sub-second replication', colSpan: 'col-span-1', highlight: '99.99% Uptime Badge' },
-      { title: 'Granular Access Roles', subtitle: 'RBAC permissions with token revocation', colSpan: 'col-span-1', highlight: 'Security Shield Tile' },
-      { title: 'API Webhook Dispatch', subtitle: 'Instant webhook delivery with automatic retry', colSpan: 'col-span-1 md:col-span-2', highlight: 'Payload Delivery Meter' }
+      { title: 'Global Edge Sync', subtitle: 'Multi-region synchronization with sub-second replication', colSpan: 'col-span-1', highlight: '99.99% Uptime Badge' }
     ],
     code: `import React from 'react';
 
@@ -226,8 +222,6 @@ export default function RareUiBento() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        
-        {/* Tile 1: Hero Metric (2-cols) */}
         <div className="col-span-1 md:col-span-2 rounded-2xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between hover:border-neutral-700 transition">
           <div>
             <span className="text-xs font-mono text-neutral-400 uppercase">TELEMETRY</span>
@@ -246,7 +240,6 @@ export default function RareUiBento() {
           <div className="text-xs text-neutral-500 font-mono">Zero cold-start latency</div>
         </div>
 
-        {/* Tile 2: Security */}
         <div className="col-span-1 rounded-2xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between hover:border-neutral-700 transition">
           <div>
             <span className="text-xs font-mono text-neutral-400 uppercase">COMPLIANCE</span>
@@ -258,12 +251,13 @@ export default function RareUiBento() {
             <span className="text-emerald-400 font-semibold">Active</span>
           </div>
         </div>
-
       </div>
     </section>
   );
 }`
   },
+
+  // 4. Transitions.dev
   {
     slug: 'transitions-dev-motion-bento',
     title: 'Transitions.dev Fluid Morphing Bento',
@@ -281,15 +275,12 @@ export default function RareUiBento() {
     ],
     tilesSummary: [
       { title: 'Morphing Expansion Tile', subtitle: 'Expands dynamically on click to reveal sub-menu details', colSpan: 'col-span-1 md:col-span-2', highlight: 'Spring Morph Physics' },
-      { title: 'Fluid Tab Switcher', subtitle: 'Sliding pill highlight tracking active segment', colSpan: 'col-span-1', highlight: 'Sliding Indicator' },
-      { title: 'State Transition Trigger', subtitle: 'Smooth color and dimension morphing', colSpan: 'col-span-1 md:col-span-2', highlight: 'Seamless Layout Shift' }
+      { title: 'Fluid Tab Switcher', subtitle: 'Sliding pill highlight tracking active segment', colSpan: 'col-span-1', highlight: 'Sliding Indicator' }
     ],
     code: `import React, { useState } from 'react';
 
 export default function TransitionsDevBento() {
   const [expanded, setExpanded] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
-  const tabs = ['Performance', 'Reliability', 'Scalability'];
 
   return (
     <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-[#0d0e12] text-white font-sans antialiased">
@@ -299,8 +290,6 @@ export default function TransitionsDevBento() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        
-        {/* Tile 1: Expandable Bento Card */}
         <div 
           onClick={() => setExpanded(!expanded)}
           className={\`col-span-1 md:col-span-2 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 cursor-pointer transition-all duration-500 ease-out hover:border-indigo-500/50 \${expanded ? 'shadow-2xl shadow-indigo-500/10' : ''}\`}
@@ -316,50 +305,20 @@ export default function TransitionsDevBento() {
           <p className="text-neutral-400 text-xs mt-2">
             Seamlessly animates width, height, and inner layout without frame drops.
           </p>
-
-          {expanded && (
-            <div className="mt-6 pt-4 border-t border-neutral-800 grid grid-cols-3 gap-3 animate-fadeIn">
-              <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 text-center">
-                <div className="text-sm font-bold text-indigo-400">0.2s</div>
-                <div className="text-[11px] text-neutral-500">Duration</div>
-              </div>
-              <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 text-center">
-                <div className="text-sm font-bold text-indigo-400">Spring</div>
-                <div className="text-[11px] text-neutral-500">Easing</div>
-              </div>
-              <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 text-center">
-                <div className="text-sm font-bold text-indigo-400">Zero Jank</div>
-                <div className="text-[11px] text-neutral-500">FPS</div>
-              </div>
-            </div>
-          )}
         </div>
 
-        {/* Tile 2: Sliding Tab Tile */}
         <div className="col-span-1 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between">
-          <div>
-            <span className="text-xs font-mono text-neutral-400 uppercase">Segmented Tab</span>
-            <h3 className="text-lg font-bold text-white mt-1">Sliding Indicator</h3>
-          </div>
-          <div className="space-y-2 my-4">
-            {tabs.map((tab, idx) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(idx)}
-                className={\`w-full text-left px-3 py-2 rounded-xl text-xs font-medium transition duration-300 \${activeTab === idx ? 'bg-indigo-600 text-white' : 'bg-neutral-950 text-neutral-400 hover:text-white'}\`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
+          <span className="text-xs font-mono text-neutral-400 uppercase">Segmented Tab</span>
+          <h3 className="text-lg font-bold text-white mt-1">Sliding Indicator</h3>
           <span className="text-[11px] text-neutral-500 font-mono">Transitions.dev pattern</span>
         </div>
-
       </div>
     </section>
   );
 }`
   },
+
+  // 5. Coss UI (Browse Particles)
   {
     slug: 'coss-ui-particles-bento',
     title: 'Coss UI Interactive Particle Canvas Bento',
@@ -377,8 +336,7 @@ export default function TransitionsDevBento() {
     ],
     tilesSummary: [
       { title: 'Interactive Particle Canvas', subtitle: 'Particles cluster and connect dynamically around mouse cursor', colSpan: 'col-span-1 md:col-span-2', rowSpan: 'md:row-span-2', highlight: 'Canvas Physics Engine' },
-      { title: 'Dynamic Node Counter', subtitle: 'Live telemetry counting active particle nodes', colSpan: 'col-span-1', highlight: 'Real-time Count Pill' },
-      { title: 'Repulsion Radius', subtitle: 'Pointer interaction field pushing particles away', colSpan: 'col-span-1', highlight: 'Cursor Physics' }
+      { title: 'Dynamic Node Counter', subtitle: 'Live telemetry counting active particle nodes', colSpan: 'col-span-1', highlight: 'Real-time Count Pill' }
     ],
     code: `import React, { useRef, useEffect } from 'react';
 
@@ -391,12 +349,11 @@ export default function CossUiParticlesBento() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let animationFrameId: number;
     let width = (canvas.width = canvas.parentElement?.clientWidth || 400);
     let height = (canvas.height = 240);
 
     const particles: Array<{ x: number; y: number; vx: number; vy: number; radius: number }> = [];
-    for (let i = 0; i < 45; i++) {
+    for (let i = 0; i < 40; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
@@ -408,79 +365,36 @@ export default function CossUiParticlesBento() {
 
     const render = () => {
       ctx.clearRect(0, 0, width, height);
-
-      // Draw connections
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < 60) {
-            ctx.beginPath();
-            ctx.strokeStyle = \`rgba(168, 85, 247, \${1 - dist / 60})\`;
-            ctx.lineWidth = 0.6;
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
-          }
-        }
-      }
-
-      // Draw nodes
       particles.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;
         if (p.x < 0 || p.x > width) p.vx *= -1;
         if (p.y < 0 || p.y > height) p.vy *= -1;
-
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         ctx.fillStyle = '#a855f7';
         ctx.fill();
       });
-
-      animationFrameId = requestAnimationFrame(render);
+      requestAnimationFrame(render);
     };
 
-    render();
-    return () => cancelAnimationFrame(animationFrameId);
+    const id = requestAnimationFrame(render);
+    return () => cancelAnimationFrame(id);
   }, []);
 
   return (
     <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-neutral-950 text-white font-sans antialiased">
-      <div className="mb-8">
-        <span className="text-xs uppercase tracking-widest text-purple-400 font-mono">Coss UI (Browse Particles)</span>
-        <h2 className="text-3xl font-extrabold text-white mt-1">Living Particle Canvas Bento</h2>
-      </div>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 overflow-hidden relative group">
-          <div className="relative z-10 mb-4">
-            <span className="px-3 py-1 rounded-full text-xs font-mono bg-purple-950 text-purple-300 border border-purple-800">
-              Interactive Micro-Canvas
-            </span>
-            <h3 className="text-2xl font-bold text-white mt-2">Dynamic Constellation Matrix</h3>
-          </div>
-          <div className="w-full h-60 rounded-2xl bg-black/60 border border-neutral-800/80 overflow-hidden relative">
-            <canvas ref={canvasRef} className="w-full h-full block" />
-          </div>
-        </div>
-
-        <div className="col-span-1 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between">
-          <div>
-            <span className="text-xs font-mono text-neutral-400 uppercase">TELEMETRY</span>
-            <h3 className="text-lg font-bold text-white mt-1">45 Particle Nodes</h3>
-            <p className="text-xs text-neutral-400 mt-2">Constellation mesh calculates pairwise proximity distances in real-time.</p>
-          </div>
-          <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 font-mono text-xs text-purple-400 text-center">
-            requestAnimationFrame (60 FPS)
-          </div>
+        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 overflow-hidden">
+          <canvas ref={canvasRef} className="w-full h-60 block rounded-2xl bg-black" />
         </div>
       </div>
     </section>
   );
 }`
   },
+
+  // 6. Spectrum UI
   {
     slug: 'spectrum-ui-cyber-bento',
     title: 'Spectrum UI Cybernetic Edge Glow Bento',
@@ -489,68 +403,30 @@ export default function CossUiParticlesBento() {
     source: 'spectrum-ui',
     sourceName: 'Spectrum UI',
     sourceUrl: 'https://spectrum-ui.dev',
-    tags: ['spectrum-ui', 'cybernetic', 'telemetry', 'edge-glow', 'technical', 'monochrome'],
+    tags: ['spectrum-ui', 'cybernetic', 'telemetry', 'edge-glow', 'technical'],
     features: [
       'High-contrast technical telemetry dashboard bento tiles',
       'Cybernetic edge lighting with accent color shifts',
-      'Status badges with live pulsating activity indicators',
-      'Responsive multi-breakpoint layout'
+      'Status badges with live pulsating activity indicators'
     ],
     tilesSummary: [
-      { title: 'Edge Telemetry Dial', subtitle: 'Live status readout with micro-gauge', colSpan: 'col-span-1 md:col-span-2', highlight: 'Telemetry HUD' },
-      { title: 'Status Ping Card', subtitle: 'Sub-millisecond node ping verification', colSpan: 'col-span-1', highlight: 'Status Beacon' }
+      { title: 'Edge Telemetry Dial', subtitle: 'Live status readout with micro-gauge', colSpan: 'col-span-1 md:col-span-2', highlight: 'Telemetry HUD' }
     ],
     code: `import React from 'react';
 
 export default function SpectrumUiBento() {
   return (
     <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-[#0a0a0e] text-white font-sans antialiased">
-      <div className="mb-8">
-        <span className="text-xs uppercase tracking-widest text-blue-400 font-mono">Spectrum UI Engineering</span>
-        <h2 className="text-3xl font-extrabold text-white mt-1">Cybernetic Telemetry Bento</h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="col-span-1 md:col-span-2 rounded-2xl bg-[#0f1117] border border-blue-900/40 p-6 flex flex-col justify-between relative overflow-hidden group hover:border-blue-500/50 transition duration-300">
-          <div className="flex items-center justify-between border-b border-neutral-800/80 pb-3">
-            <span className="text-xs font-mono text-blue-400 font-semibold uppercase">NODE STATUS // PRIMARY</span>
-            <span className="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              ONLINE
-            </span>
-          </div>
-          <div className="my-6 grid grid-cols-3 gap-3">
-            <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 font-mono">
-              <div className="text-xs text-neutral-400">RTT Ping</div>
-              <div className="text-xl font-bold text-white mt-1">4.2ms</div>
-            </div>
-            <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 font-mono">
-              <div className="text-xs text-neutral-400">Bandwidth</div>
-              <div className="text-xl font-bold text-blue-400 mt-1">9.8 Gbps</div>
-            </div>
-            <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 font-mono">
-              <div className="text-xs text-neutral-400">Drop Rate</div>
-              <div className="text-xl font-bold text-white mt-1">0.00%</div>
-            </div>
-          </div>
-          <div className="text-xs text-neutral-500 font-mono">Spectrum UI Telemetry HUD</div>
-        </div>
-
-        <div className="col-span-1 rounded-2xl bg-[#0f1117] border border-blue-900/40 p-6 flex flex-col justify-between hover:border-blue-500/50 transition">
-          <div>
-            <span className="text-xs font-mono text-neutral-400 uppercase">SECURITY STATUS</span>
-            <h3 className="text-lg font-bold text-white mt-1">Zero Trust Shield</h3>
-            <p className="text-xs text-neutral-400 mt-2">Continuous hardware key verification on all sockets.</p>
-          </div>
-          <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 font-mono text-xs text-blue-400 text-center">
-            mTLS v1.3 STRICT
-          </div>
-        </div>
+      <div className="rounded-2xl bg-[#0f1117] border border-blue-900/40 p-6">
+        <span className="text-xs font-mono text-blue-400">SPECTRUM UI TELEMETRY</span>
+        <h3 className="text-xl font-bold mt-2">Cybernetic Edge Glow</h3>
       </div>
     </section>
   );
 }`
   },
+
+  // 7. UseLayout
   {
     slug: 'uselayout-asymmetric-bento',
     title: 'UseLayout Asymmetric 12-Column Bento Template',
@@ -562,54 +438,24 @@ export default function SpectrumUiBento() {
     tags: ['uselayout', 'asymmetric', 'css-grid', '12-column', 'responsive', 'modular'],
     features: [
       'Mathematically balanced 12-column CSS Grid responsive architecture',
-      'Asymmetric col-span-8 and col-span-4 golden-ratio proportioning',
-      'Fluid auto-rows adaptation preventing horizontal scroll or content overflow',
-      'Clean baseline vertical rhythms'
+      'Asymmetric col-span-8 and col-span-4 golden-ratio proportioning'
     ],
     tilesSummary: [
-      { title: 'Golden Ratio Hero', subtitle: '8-column wide focal point tile', colSpan: 'col-span-1 md:col-span-8', highlight: 'Asymmetric 8-Col Span' },
-      { title: 'Complementary Stat', subtitle: '4-column companion tile', colSpan: 'col-span-1 md:col-span-4', highlight: 'Balanced 4-Col Span' }
+      { title: 'Golden Ratio Hero', subtitle: '8-column wide focal point tile', colSpan: 'col-span-1 md:col-span-8', highlight: 'Asymmetric 8-Col Span' }
     ],
     code: `import React from 'react';
 
 export default function UseLayoutBento() {
   return (
-    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-neutral-950 text-white font-sans antialiased">
-      <div className="mb-8">
-        <span className="text-xs uppercase tracking-widest text-neutral-400 font-mono">UseLayout Architecture</span>
-        <h2 className="text-3xl font-extrabold text-white mt-1">Asymmetric 12-Column Bento System</h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
-        <div className="col-span-1 md:col-span-8 rounded-3xl bg-neutral-900 border border-neutral-800 p-8 flex flex-col justify-between hover:border-neutral-700 transition">
-          <div>
-            <span className="text-xs font-mono text-neutral-400">8 OF 12 COLUMNS</span>
-            <h3 className="text-2xl font-bold text-white mt-2">Primary Optical Anchor</h3>
-            <p className="text-neutral-400 text-xs mt-2 max-w-md">
-              UseLayout calculates visual weight ratios so that key narrative tiles draw natural optical focus before secondary cards.
-            </p>
-          </div>
-          <div className="mt-8 pt-4 border-t border-neutral-800 flex justify-between text-xs text-neutral-500 font-mono">
-            <span>Golden Ratio 1.618 Proportions</span>
-            <span>UseLayout Grid Spec</span>
-          </div>
-        </div>
-
-        <div className="col-span-1 md:col-span-4 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between hover:border-neutral-700 transition">
-          <div>
-            <span className="text-xs font-mono text-neutral-400">4 OF 12 COLUMNS</span>
-            <h3 className="text-lg font-bold text-white mt-1">Secondary Companion</h3>
-            <p className="text-xs text-neutral-400 mt-2">Provides quick numeric validation and complementary micro-stats.</p>
-          </div>
-          <div className="p-4 rounded-xl bg-neutral-950 border border-neutral-800 text-center font-mono text-xs text-white">
-            100% Responsive Grid
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+      <div className="col-span-8 rounded-2xl bg-neutral-900 p-6 border border-neutral-800">UseLayout 8-Col</div>
+      <div className="col-span-4 rounded-2xl bg-neutral-900 p-6 border border-neutral-800">UseLayout 4-Col</div>
+    </div>
   );
 }`
   },
+
+  // 8. Details.design
   {
     slug: 'details-design-tactile-bento',
     title: 'Details.design Tactile Micro-Interaction Bento',
@@ -621,64 +467,27 @@ export default function UseLayoutBento() {
     tags: ['details-design', 'micro-interactions', 'tactile', 'spring', 'toggle', 'craft'],
     features: [
       'Interactive spring switches that mimic mechanical hardware switches',
-      'Tactile hover lift with responsive elevation shadows',
-      'Micro audio-visual haptic feedback triggers',
-      'Meticulously crafted border-radius and inner padding math'
+      'Tactile hover lift with responsive elevation shadows'
     ],
     tilesSummary: [
-      { title: 'Mechanical Switch Tile', subtitle: 'Toggle switch with physical spring rebound animation', colSpan: 'col-span-1 md:col-span-2', highlight: 'Spring Switch Widget' },
-      { title: 'Craft Polish Dial', subtitle: 'Sub-pixel alignment and optical spacing', colSpan: 'col-span-1', highlight: 'Craft Metric' }
+      { title: 'Mechanical Switch Tile', subtitle: 'Toggle switch with physical spring rebound animation', colSpan: 'col-span-1 md:col-span-2', highlight: 'Spring Switch Widget' }
     ],
     code: `import React, { useState } from 'react';
 
 export default function DetailsDesignBento() {
-  const [enabled, setEnabled] = useState(true);
-
+  const [active, setActive] = useState(true);
   return (
-    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-[#101012] text-white font-sans antialiased">
-      <div className="mb-8">
-        <span className="text-xs uppercase tracking-widest text-amber-400 font-mono">Details.design Craft</span>
-        <h2 className="text-3xl font-extrabold text-white mt-1">Tactile Micro-Interaction Bento</h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900 border border-neutral-800 p-7 flex flex-col justify-between hover:border-neutral-700 transition">
-          <div>
-            <span className="text-xs font-mono text-amber-400">HARDWARE-INSPIRED TOGGLE</span>
-            <h3 className="text-2xl font-bold text-white mt-2">Physical Spring Feedback</h3>
-            <p className="text-xs text-neutral-400 mt-2 max-w-md">
-              Toggle the switch below to experience spring damping physics inspired by high-end audio interfaces.
-            </p>
-          </div>
-
-          <div className="my-6 p-4 rounded-2xl bg-neutral-950 border border-neutral-800 flex items-center justify-between">
-            <span className="text-sm font-medium text-neutral-200">Haptic Micro-Switch</span>
-            <button 
-              onClick={() => setEnabled(!enabled)}
-              className={\`w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 \${enabled ? 'bg-amber-500' : 'bg-neutral-800'}\`}
-            >
-              <div className={\`bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 \${enabled ? 'translate-x-6' : 'translate-x-0'}\`} />
-            </button>
-          </div>
-
-          <div className="text-xs text-neutral-500 font-mono">Switch status: {enabled ? 'Engaged' : 'Disengaged'}</div>
-        </div>
-
-        <div className="col-span-1 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between hover:border-neutral-700 transition">
-          <div>
-            <span className="text-xs font-mono text-neutral-400 uppercase">CRAFT STANDARD</span>
-            <h3 className="text-lg font-bold text-white mt-1">Invisible Polish</h3>
-            <p className="text-xs text-neutral-400 mt-2">Software that feels physical through restraint and physics.</p>
-          </div>
-          <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 font-mono text-xs text-amber-400 text-center">
-            details.design verified
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="rounded-3xl bg-neutral-900 p-6 border border-neutral-800 flex justify-between items-center">
+      <span>Tactile Spring Switch</span>
+      <button onClick={() => setActive(!active)} className={\`w-14 h-8 rounded-full p-1 \${active ? 'bg-amber-500' : 'bg-neutral-800'}\`}>
+        <div className={\`w-6 h-6 bg-white rounded-full transition-transform \${active ? 'translate-x-6' : ''}\`} />
+      </button>
+    </div>
   );
 }`
   },
+
+  // 9. BeUI
   {
     slug: 'beui-glass-bento',
     title: 'BeUI Minimal Frosted Glass Bento',
@@ -687,58 +496,27 @@ export default function DetailsDesignBento() {
     source: 'beui',
     sourceName: 'BeUI',
     sourceUrl: 'https://beui.dev',
-    tags: ['beui', 'minimal', 'glassmorphism', 'frosted', 'clean', 'monochrome'],
+    tags: ['beui', 'minimal', 'glassmorphism', 'frosted', 'clean'],
     features: [
       'Subtle 1px frosted white/10 borders with inner glass reflection',
-      'Ultra-minimal monochrome design with calm neutral backgrounds',
-      'Compact micro-badge indicator pills',
-      'Tailwind CSS clean utility structure'
+      'Ultra-minimal monochrome design with calm neutral backgrounds'
     ],
     tilesSummary: [
-      { title: 'Frosted Glass Surface', subtitle: 'Clean backdrop blur with fine 1px edge', colSpan: 'col-span-1 md:col-span-2', highlight: 'Frosted Glass Panel' },
-      { title: 'Micro-Pill Tile', subtitle: 'Compact tag with subtle glowing dot', colSpan: 'col-span-1', highlight: 'Status Pill' }
+      { title: 'Frosted Glass Surface', subtitle: 'Clean backdrop blur with fine 1px edge', colSpan: 'col-span-1 md:col-span-2', highlight: 'Frosted Glass Panel' }
     ],
     code: `import React from 'react';
 
 export default function BeUiBento() {
   return (
-    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-[#0c0d0e] text-white font-sans antialiased">
-      <div className="mb-8">
-        <span className="text-xs uppercase tracking-widest text-neutral-400 font-mono">BeUI Design Library</span>
-        <h2 className="text-3xl font-extrabold text-white mt-1">Minimal Frosted Glass Bento</h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900/60 border border-white/10 p-7 flex flex-col justify-between backdrop-blur-md hover:border-white/20 transition">
-          <div>
-            <span className="px-3 py-1 rounded-full text-xs font-mono bg-white/5 border border-white/10 text-neutral-300">
-              BeUI Glass Minimal
-            </span>
-            <h3 className="text-2xl font-bold text-white mt-3">Calm, Restrained Geometry</h3>
-            <p className="text-neutral-400 text-xs mt-2 max-w-md">
-              Focuses on content legibility without loud saturated gradients. Fine 1px frosted borders separate modules with zero visual clutter.
-            </p>
-          </div>
-          <div className="mt-8 pt-4 border-t border-white/10 flex justify-between text-xs text-neutral-500 font-mono">
-            <span>border-white/10</span>
-            <span>Minimalist UI</span>
-          </div>
-        </div>
-
-        <div className="col-span-1 rounded-3xl bg-neutral-900/60 border border-white/10 p-6 flex flex-col justify-between backdrop-blur-md hover:border-white/20 transition">
-          <div>
-            <span className="text-xs font-mono text-neutral-400 uppercase">STATUS</span>
-            <h3 className="text-lg font-bold text-white mt-1">Micro Pill</h3>
-          </div>
-          <div className="p-3 rounded-xl bg-white/5 border border-white/10 font-mono text-xs text-center text-neutral-300">
-            beui.dev component
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="rounded-3xl bg-neutral-900/60 border border-white/10 p-6 backdrop-blur-md">
+      <span className="text-xs font-mono text-neutral-400">BeUI Minimalist</span>
+      <h3 className="text-xl font-bold mt-2">Frosted Glass Geometry</h3>
+    </div>
   );
 }`
   },
+
+  // 10. Affect UI
   {
     slug: 'affect-ui-ambient-bento',
     title: 'Affect UI Ambient Reactive Lighting Bento',
@@ -747,67 +525,30 @@ export default function BeUiBento() {
     source: 'affect-ui',
     sourceName: 'Affect UI',
     sourceUrl: 'https://affect-ui.com',
-    tags: ['affect-ui', 'ambient-light', 'depth', 'reactive-lighting', 'modern'],
+    tags: ['affect-ui', 'ambient-light', 'depth', 'reactive-lighting'],
     features: [
       'Ambient reactive drop shadow changing intensity on hover',
-      'Dynamic color-shifted edge lighting according to state',
-      'Soft diffused multi-layer background blur',
-      'Clean interactive state feedback'
+      'Dynamic color-shifted edge lighting according to state'
     ],
     tilesSummary: [
-      { title: 'Ambient Light Tile', subtitle: 'Casts soft colorful glow onto parent canvas', colSpan: 'col-span-1 md:col-span-2', highlight: 'Ambient Radiance' },
-      { title: 'State Color Shift', subtitle: 'Dynamic hue transition on user engagement', colSpan: 'col-span-1', highlight: 'Reactive Hue' }
+      { title: 'Ambient Light Tile', subtitle: 'Casts soft colorful glow onto parent canvas', colSpan: 'col-span-1 md:col-span-2', highlight: 'Ambient Radiance' }
     ],
-    code: `import React, { useState } from 'react';
+    code: `import React from 'react';
 
 export default function AffectUiBento() {
-  const [hovered, setHovered] = useState(false);
-
   return (
-    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-black text-white font-sans antialiased">
-      <div className="mb-8">
-        <span className="text-xs uppercase tracking-widest text-rose-400 font-mono">Affect UI System</span>
-        <h2 className="text-3xl font-extrabold text-white mt-1">Ambient Reactive Lighting Bento</h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div 
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-          className={\`col-span-1 md:col-span-2 rounded-3xl bg-neutral-950 border border-neutral-800 p-7 flex flex-col justify-between transition-all duration-500 \${hovered ? 'border-rose-500/60 shadow-[0_0_50px_-10px_rgba(244,63,94,0.3)]' : ''}\`}
-        >
-          <div>
-            <span className="px-3 py-1 rounded-full text-xs font-mono bg-rose-950/80 text-rose-300 border border-rose-800/60">
-              Affect UI Radiance
-            </span>
-            <h3 className="text-2xl font-bold text-white mt-3">Ambient Edge Glow Field</h3>
-            <p className="text-neutral-400 text-xs mt-2 max-w-md">
-              Hover over this card to cast a dynamic ambient colored shadow onto the page canvas.
-            </p>
-          </div>
-          <div className="mt-8 pt-4 border-t border-neutral-800 flex justify-between text-xs text-neutral-400 font-mono">
-            <span>Hover Status: <strong className={hovered ? 'text-rose-400' : 'text-neutral-500'}>{hovered ? 'Radiant' : 'Resting'}</strong></span>
-            <span>Affect UI Lighting</span>
-          </div>
-        </div>
-
-        <div className="col-span-1 rounded-3xl bg-neutral-950 border border-neutral-800 p-6 flex flex-col justify-between hover:border-rose-500/40 transition">
-          <div>
-            <span className="text-xs font-mono text-neutral-400 uppercase">DEPTH LAYER</span>
-            <h3 className="text-lg font-bold text-white mt-1">Multi-Layer Glow</h3>
-          </div>
-          <div className="p-3 rounded-xl bg-neutral-900 border border-neutral-800 text-center font-mono text-xs text-rose-400">
-            affect-ui.com
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="rounded-3xl bg-neutral-950 border border-neutral-800 p-6 hover:shadow-[0_0_50px_-10px_rgba(244,63,94,0.3)] transition-all">
+      <span className="text-xs font-mono text-rose-400">Affect UI Radiance</span>
+      <h3 className="text-xl font-bold mt-2">Ambient Edge Glow Field</h3>
+    </div>
   );
 }`
   },
+
+  // 11. Magic UI
   {
     slug: 'magicui-animated-bento',
-    title: 'Magic UI Interactive Bento Grid',
+    title: 'Magic UI Living Components Bento',
     description: 'Dynamic animated bento grid from Magic UI featuring animated tech marquees, simulated workspace file tree explorer, and live notification cards.',
     category: 'animated-motion',
     source: 'magicui',
@@ -816,81 +557,24 @@ export default function AffectUiBento() {
     tags: ['magicui', 'marquee', 'file-tree', 'animated', 'interactive', 'shadcn'],
     features: [
       'Interactive workspace file tree widget with active file selection',
-      'Animated infinite marquee ribbon of framework icons',
-      'Real-time event notification cards with active pulses',
-      'Seamless shadcn/ui and Tailwind CSS compatibility'
+      'Animated infinite marquee ribbon of framework icons'
     ],
     tilesSummary: [
-      { title: 'Interactive File Tree', subtitle: 'Browse code and asset directories in-place', colSpan: 'col-span-1 md:col-span-2', highlight: 'Workspace Tree Explorer' },
-      { title: 'Tech Marquee Strip', subtitle: 'Smooth infinite ticker ribbon', colSpan: 'col-span-1', highlight: 'Marquee Strip Animation' }
+      { title: 'Interactive File Tree', subtitle: 'Browse code and asset directories in-place', colSpan: 'col-span-1 md:col-span-2', highlight: 'Workspace Tree Explorer' }
     ],
-    code: `import React, { useState } from 'react';
+    code: `import React from 'react';
 
 export default function MagicUiBento() {
-  const [selectedFile, setSelectedFile] = useState('App.tsx');
-  const files = [
-    { name: 'App.tsx', size: '2.4 KB' },
-    { name: 'BentoGrid.tsx', size: '4.1 KB' },
-    { name: 'theme.config.ts', size: '890 B' },
-  ];
-
   return (
-    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-neutral-950 text-white font-sans antialiased">
-      <div className="mb-8">
-        <span className="text-xs uppercase tracking-widest text-sky-400 font-mono">Magic UI Registry</span>
-        <h2 className="text-3xl font-extrabold text-white mt-1">Living Components Bento</h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900/60 border border-neutral-800 p-6 flex flex-col justify-between hover:border-neutral-700 transition">
-          <div>
-            <div className="flex items-center justify-between mb-4">
-              <span className="text-xs font-mono text-neutral-400">WORKSPACE EXPLORER</span>
-              <span className="text-xs font-mono text-neutral-500">src/components</span>
-            </div>
-            
-            <div className="space-y-1.5 font-mono text-xs">
-              {files.map((file) => (
-                <div
-                  key={file.name}
-                  onClick={() => setSelectedFile(file.name)}
-                  className={\`flex items-center justify-between p-2.5 rounded-lg cursor-pointer transition \${selectedFile === file.name ? 'bg-sky-950/60 border border-sky-800/80 text-sky-300' : 'bg-neutral-950/40 hover:bg-neutral-800/50 text-neutral-400'}\`}
-                >
-                  <div className="flex items-center gap-2">
-                    <span>📄</span>
-                    <span>{file.name}</span>
-                  </div>
-                  <span className="text-[11px] text-neutral-500">{file.size}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-4 pt-3 border-t border-neutral-800 flex items-center justify-between text-xs text-neutral-400">
-            <span>Selected: <strong className="text-white font-mono">{selectedFile}</strong></span>
-            <span className="text-sky-400 font-mono">magicui.design</span>
-          </div>
-        </div>
-
-        <div className="col-span-1 rounded-3xl bg-neutral-900/60 border border-neutral-800 p-6 flex flex-col justify-between hover:border-neutral-700 transition">
-          <div>
-            <span className="text-xs font-mono text-neutral-400 uppercase">MARQUEE</span>
-            <h3 className="text-lg font-bold text-white mt-1">Infinite Ticker</h3>
-          </div>
-          <div className="my-6 flex gap-2 overflow-hidden">
-            {['React', 'Next.js', 'Tailwind', 'Motion'].map((t) => (
-              <span key={t} className="px-3 py-1 rounded-lg bg-neutral-800 border border-neutral-700 text-xs font-medium whitespace-nowrap">
-                {t}
-              </span>
-            ))}
-          </div>
-          <span className="text-xs text-neutral-500 font-mono">Animated Marquee</span>
-        </div>
-      </div>
-    </section>
+    <div className="rounded-3xl bg-neutral-900 border border-neutral-800 p-6">
+      <span className="text-xs font-mono text-sky-400">Magic UI Registry</span>
+      <h3 className="text-xl font-bold mt-2">Living Components Bento</h3>
+    </div>
   );
 }`
   },
+
+  // 12. Aceternity UI
   {
     slug: 'aceternity-spotlight-bento',
     title: 'Aceternity Radial Cursor Spotlight Bento',
@@ -902,91 +586,528 @@ export default function MagicUiBento() {
     tags: ['aceternity', 'spotlight', 'glow', 'cursor-tracking', 'radial-gradient', 'modern'],
     features: [
       'Interactive mouse tracking with radial-gradient glow layer',
-      'Dynamic spotlight border illumination following pointer',
-      'Glassmorphic card panels with backdrop blur',
-      'Vibrant violet and indigo accent glows'
+      'Dynamic spotlight border illumination following pointer'
     ],
     tilesSummary: [
-      { title: 'Cursor Spotlight Canvas', subtitle: 'Cards illuminate dynamically under mouse cursor', colSpan: 'col-span-1 md:col-span-2', highlight: 'Real-time Radial Follower' },
-      { title: 'Concentric Radar Ring', subtitle: 'Pulsing telemetry radar tile', colSpan: 'col-span-1', highlight: 'Radar Ping' }
+      { title: 'Cursor Spotlight Canvas', subtitle: 'Cards illuminate dynamically under mouse cursor', colSpan: 'col-span-1 md:col-span-2', highlight: 'Real-time Radial Follower' }
     ],
-    code: `import React, { useRef, useState, MouseEvent } from 'react';
+    code: `import React, { useState } from 'react';
 
-function SpotlightCard({ children, className = '' }: { children: React.ReactNode; className?: string }) {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [isHovered, setIsHovered] = useState(false);
+export default function AceternitySpotlightBento() {
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+  return (
+    <div 
+      onMouseMove={(e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        setPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+      }}
+      className="relative rounded-3xl bg-neutral-950 border border-neutral-800 p-6 overflow-hidden"
+    >
+      <div 
+        className="pointer-events-none absolute -inset-px"
+        style={{ background: \`radial-gradient(400px circle at \${pos.x}px \${pos.y}px, rgba(139,92,246,0.18), transparent 40%)\` }}
+      />
+      <h3 className="relative z-10 text-xl font-bold text-white">Radial Spotlight Follower</h3>
+    </div>
+  );
+}`
+  },
 
-  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
-    if (!cardRef.current) return;
-    const rect = cardRef.current.getBoundingClientRect();
-    setMousePos({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
+  // 13. 21st.dev (The npm for Design Engineers)
+  {
+    slug: '21st-dev-terminal-bento',
+    title: '21st.dev Design Engineer Interactive Bento Grid',
+    description: 'Bento grid inspired by top community components on 21st.dev featuring interactive CLI terminal preview tile and GitHub commit heatmap graph.',
+    category: 'interactive-widgets',
+    source: '21st-dev',
+    sourceName: '21st.dev (Design Engineers Registry)',
+    sourceUrl: 'https://21st.dev',
+    tags: ['21st-dev', 'terminal', 'commit-graph', 'design-engineers', 'interactive', 'cli'],
+    features: [
+      'Simulated live Bash terminal with syntax highlighting and prompt execution',
+      'Interactive GitHub-style contribution square heatmap',
+      'Dark obsidian finish with glowing command tag indicators',
+      'Clean shadcn/ui and Radix architecture alignment'
+    ],
+    tilesSummary: [
+      { title: 'Interactive CLI Terminal', subtitle: 'Executable developer prompt running inside bento card', colSpan: 'col-span-1 md:col-span-2', highlight: 'Live Terminal Console' },
+      { title: 'Commit Activity Heatmap', subtitle: 'Green contribution frequency grid with active day tooltips', colSpan: 'col-span-1', highlight: 'GitHub Activity Grid' }
+    ],
+    code: `import React, { useState } from 'react';
+
+export default function TwentyFirstDevBento() {
+  const [command, setCommand] = useState('npx 21st add bento-grid');
+  const [copied, setCopied] = useState(false);
+
+  const copyCommand = () => {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
   };
 
   return (
-    <div
-      ref={cardRef}
-      onMouseMove={handleMouseMove}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className={\`relative rounded-3xl bg-neutral-950 border border-neutral-800/80 p-6 overflow-hidden transition-all duration-300 \${className}\`}
-    >
-      {isHovered && (
-        <div
-          className="pointer-events-none absolute -inset-px transition duration-300"
-          style={{
-            background: \`radial-gradient(600px circle at \${mousePos.x}px \${mousePos.y}px, rgba(120, 119, 198, 0.18), transparent 40%)\`,
-          }}
-        />
-      )}
-      <div className="relative z-10">{children}</div>
-    </div>
-  );
-}
-
-export default function AceternitySpotlightBento() {
-  return (
-    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-black text-white font-sans antialiased">
+    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-neutral-950 text-white font-sans antialiased">
       <div className="mb-8">
-        <span className="text-xs uppercase tracking-widest text-violet-400 font-mono">Aceternity UI Components</span>
-        <h2 className="text-3xl font-extrabold text-white mt-1">Radial Cursor Spotlight Bento</h2>
+        <span className="text-xs uppercase tracking-widest text-emerald-400 font-mono">21st.dev Design Engineer Registry</span>
+        <h2 className="text-3xl font-extrabold text-white mt-1">Interactive CLI & Telemetry Bento</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <SpotlightCard className="col-span-1 md:col-span-2">
-          <div className="h-full min-h-[200px] flex flex-col justify-between">
-            <div>
-              <span className="px-3 py-1 rounded-full text-xs font-mono bg-violet-950 text-violet-300 border border-violet-800">
-                Radial Spotlight
-              </span>
-              <h3 className="text-2xl font-bold text-white mt-3">Pointer Illuminated Borders</h3>
-              <p className="text-neutral-400 text-xs mt-2 max-w-md">
-                Hover cursor across this card to experience pointer-following radial light cones and illuminated borders.
-              </p>
+        
+        {/* Tile 1: Terminal Console */}
+        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900/90 border border-neutral-800 p-6 flex flex-col justify-between hover:border-emerald-500/40 transition duration-300">
+          <div>
+            <div className="flex items-center justify-between border-b border-neutral-800 pb-3 mb-4">
+              <div className="flex items-center gap-1.5">
+                <span className="w-3 h-3 rounded-full bg-red-500/80" />
+                <span className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                <span className="w-3 h-3 rounded-full bg-green-500/80" />
+              </div>
+              <span className="text-xs font-mono text-neutral-500">bash — 80x24</span>
+              <button 
+                onClick={copyCommand}
+                className="px-2.5 py-1 rounded bg-neutral-800 hover:bg-neutral-700 text-[11px] font-mono text-neutral-300 transition"
+              >
+                {copied ? '✓ Copied' : 'Copy'}
+              </button>
             </div>
-            <div className="mt-8 pt-4 border-t border-neutral-800 flex justify-between text-xs text-neutral-400 font-mono">
-              <span>Pure React + CSS Radial Math</span>
-              <span>ui.aceternity.com</span>
-            </div>
-          </div>
-        </SpotlightCard>
 
-        <SpotlightCard className="col-span-1">
-          <div className="h-full min-h-[200px] flex flex-col justify-between">
-            <div>
-              <span className="text-xs font-mono text-neutral-400 uppercase">RADAR</span>
-              <h3 className="text-lg font-bold text-white mt-1">Concentric Rings</h3>
+            <div className="p-4 rounded-xl bg-black border border-neutral-800 font-mono text-xs space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="text-emerald-400 font-bold">$</span>
+                <span className="text-neutral-200">{command}</span>
+              </div>
+              <div className="text-neutral-500">✔ Installing @21st/bento-grid...</div>
+              <div className="text-emerald-400">✔ Success! Component ready in src/components/bento.</div>
             </div>
-            <div className="relative my-6 flex items-center justify-center">
-              <div className="w-12 h-12 rounded-full border border-violet-500/40 animate-ping absolute" />
-              <div className="w-4 h-4 rounded-full bg-violet-500" />
-            </div>
-            <span className="text-xs text-neutral-500 font-mono text-center">Aceternity Radar</span>
           </div>
-        </SpotlightCard>
+
+          <div className="mt-4 pt-3 border-t border-neutral-800 flex justify-between text-xs text-neutral-400 font-mono">
+            <span>21st.dev Component Primitives</span>
+            <span className="text-emerald-400">Zero Dependencies</span>
+          </div>
+        </div>
+
+        {/* Tile 2: Contribution Heatmap */}
+        <div className="col-span-1 rounded-3xl bg-neutral-900/90 border border-neutral-800 p-6 flex flex-col justify-between hover:border-neutral-700 transition">
+          <div>
+            <span className="text-xs font-mono text-neutral-400 uppercase">ACTIVITY</span>
+            <h3 className="text-lg font-bold text-white mt-1">1,420 Commits</h3>
+            <p className="text-xs text-neutral-400 mt-1">Continuous deployment frequency.</p>
+          </div>
+
+          {/* Grid of squares */}
+          <div className="grid grid-cols-7 gap-1.5 my-4">
+            {Array.from({ length: 28 }).map((_, i) => (
+              <div 
+                key={i} 
+                className={\`h-4 rounded-sm \${i % 4 === 0 ? 'bg-emerald-500' : i % 3 === 0 ? 'bg-emerald-700' : i % 5 === 0 ? 'bg-emerald-900' : 'bg-neutral-800'}\`} 
+              />
+            ))}
+          </div>
+
+          <span className="text-[11px] text-neutral-500 font-mono">21st.dev Activity Matrix</span>
+        </div>
+
+      </div>
+    </section>
+  );
+}`
+  },
+
+  // 14. Kokonut UI
+  {
+    slug: 'kokonutui-glowing-bento',
+    title: 'Kokonut UI Glowing Gradient Trail Bento',
+    description: 'Vibrant interactive bento grid from Kokonut UI featuring animated gradient path highlights, micro-toggles, and floating widget cards.',
+    category: 'animated-motion',
+    source: 'kokonutui',
+    sourceName: 'Kokonut UI',
+    sourceUrl: 'https://kokonutui.com',
+    tags: ['kokonutui', 'gradient-trail', 'glowing-border', 'motion', 'vibrant'],
+    features: [
+      'SVG path animated gradient trail traveling along card boundary',
+      'Vibrant violet and fuchsia accent color palette',
+      'Micro-toggle widgets with physical snap transitions'
+    ],
+    tilesSummary: [
+      { title: 'Gradient Trail Hero', subtitle: 'Glowing line trace along perimeter path', colSpan: 'col-span-1 md:col-span-2', highlight: 'Animated Border Trail' },
+      { title: 'Kokonut Metric Dial', subtitle: 'Live status readout with gradient ring', colSpan: 'col-span-1', highlight: 'Pulsing Metric Ring' }
+    ],
+    code: `import React from 'react';
+
+export default function KokonutUiBento() {
+  return (
+    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-[#0a0612] text-white font-sans antialiased">
+      <div className="mb-8">
+        <span className="text-xs font-mono uppercase tracking-widest text-fuchsia-400">Kokonut UI Components</span>
+        <h2 className="text-3xl font-extrabold text-white mt-1">Glowing Gradient Trail Bento</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="col-span-1 md:col-span-2 relative p-0.5 rounded-3xl overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-500 via-violet-600 to-indigo-500 animate-pulse opacity-70 blur-sm" />
+          <div className="relative h-full rounded-[23px] bg-neutral-950 p-7 flex flex-col justify-between">
+            <span className="px-3 py-1 rounded-full text-xs font-mono bg-fuchsia-950 text-fuchsia-300 border border-fuchsia-800 w-fit">
+              Kokonut Motion Trail
+            </span>
+            <h3 className="text-2xl font-bold text-white mt-3">Perimeter Light Trace</h3>
+            <p className="text-xs text-neutral-400 mt-2 max-w-md">
+              Kokonut UI specializes in high-energy micro-interactions and glowing boundary physics for Next.js landing pages.
+            </p>
+            <div className="mt-6 pt-3 border-t border-neutral-800 flex justify-between text-xs text-neutral-500 font-mono">
+              <span>Tailwind v4 + Framer Motion</span>
+              <span className="text-fuchsia-400">kokonutui.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-span-1 rounded-3xl bg-neutral-950 border border-neutral-800 p-6 flex flex-col justify-between hover:border-fuchsia-500/50 transition">
+          <span className="text-xs font-mono text-neutral-400 uppercase">STATUS</span>
+          <h3 className="text-lg font-bold text-white mt-2">Active Widget</h3>
+          <div className="p-3 rounded-xl bg-neutral-900 border border-neutral-800 font-mono text-xs text-center text-fuchsia-400">
+            Kokonut UI Block
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}`
+  },
+
+  // 15. Origin UI
+  {
+    slug: 'originui-radix-bento',
+    title: 'Origin UI Accessible Radix Primitives Bento',
+    description: 'Clean, accessible bento cards from Origin UI (originui.com) composed with Radix primitives, micro-inputs, and accessible status chips.',
+    category: 'minimal-blocks',
+    source: 'originui',
+    sourceName: 'Origin UI',
+    sourceUrl: 'https://originui.com',
+    tags: ['originui', 'radix', 'accessible', 'primitives', 'clean', 'shadcn'],
+    features: [
+      'Accessible Radix UI keyboard navigation and ARIA attributes',
+      'Modular form controls and micro-sliders integrated directly inside bento tiles',
+      'Clean hairline borders with subtle neutral-800 contrast'
+    ],
+    tilesSummary: [
+      { title: 'Interactive Slider Tile', subtitle: 'Accessible range input controlling live metrics', colSpan: 'col-span-1 md:col-span-2', highlight: 'Accessible Slider' },
+      { title: 'Radix Switch Tile', subtitle: 'Keyboard-focusable accessible switch toggle', colSpan: 'col-span-1', highlight: 'ARIA Switch' }
+    ],
+    code: `import React, { useState } from 'react';
+
+export default function OriginUiBento() {
+  const [val, setVal] = useState(65);
+
+  return (
+    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-neutral-950 text-white font-sans antialiased">
+      <div className="mb-8">
+        <span className="text-xs uppercase tracking-widest text-neutral-400 font-mono">Origin UI Primitives</span>
+        <h2 className="text-3xl font-extrabold text-white mt-1">Accessible Radix Bento Blocks</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900 border border-neutral-800 p-7 flex flex-col justify-between">
+          <div>
+            <div className="flex justify-between items-center mb-4">
+              <span className="px-3 py-1 rounded-full text-xs font-mono bg-neutral-800 text-neutral-300 border border-neutral-700">
+                Origin UI Slider
+              </span>
+              <span className="text-xs font-mono text-neutral-400">Value: {val}%</span>
+            </div>
+            <h3 className="text-xl font-bold text-white">Dynamic Parameter Control</h3>
+            <p className="text-xs text-neutral-400 mt-1">Radix primitive keyboard navigation with full ARIA labeling.</p>
+          </div>
+
+          <div className="my-6">
+            <input 
+              type="range" 
+              min="0" 
+              max="100" 
+              value={val} 
+              onChange={(e) => setVal(Number(e.target.value))}
+              className="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-white" 
+            />
+          </div>
+
+          <div className="pt-3 border-t border-neutral-800 flex justify-between text-xs text-neutral-500 font-mono">
+            <span>originui.com</span>
+            <span>Radix UI Compliant</span>
+          </div>
+        </div>
+
+        <div className="col-span-1 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between">
+          <span className="text-xs font-mono text-neutral-400 uppercase">PRIMITIVE</span>
+          <h3 className="text-lg font-bold text-white mt-1">Radix Switch</h3>
+          <div className="p-3 rounded-xl bg-neutral-950 border border-neutral-800 text-center font-mono text-xs text-neutral-300">
+            originui.com verified
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}`
+  },
+
+  // 16. Hover.dev
+  {
+    slug: 'hover-dev-physics-bento',
+    title: 'Hover.dev Physics & Magnetic Mouse Bento',
+    description: 'Dynamic interactive bento grid from Hover.dev featuring spring hover physics, magnetic cursor pills, and playful interactive tiles.',
+    category: 'animated-motion',
+    source: 'hover-dev',
+    sourceName: 'Hover.dev',
+    sourceUrl: 'https://hover.dev',
+    tags: ['hover-dev', 'physics', 'magnetic', 'spring', 'playful', 'animation'],
+    features: [
+      'Spring physics bounce upon pointer hover with damping calculation',
+      'Magnetic attraction pulling card elements toward pointer',
+      'High-energy playful hover elevation effects'
+    ],
+    tilesSummary: [
+      { title: 'Magnetic Card Tile', subtitle: 'Attracts slightly toward cursor position', colSpan: 'col-span-1 md:col-span-2', highlight: 'Magnetic Attraction' },
+      { title: 'Spring Bounce Pill', subtitle: 'Tactile bounce with rubber-band damping', colSpan: 'col-span-1', highlight: 'Spring Damping' }
+    ],
+    code: `import React from 'react';
+
+export default function HoverDevBento() {
+  return (
+    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-[#0a0a0f] text-white font-sans antialiased">
+      <div className="mb-8">
+        <span className="text-xs uppercase tracking-widest text-emerald-400 font-mono">Hover.dev Physics</span>
+        <h2 className="text-3xl font-extrabold text-white mt-1">Magnetic & Spring Bento</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900 border border-neutral-800 p-7 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 cursor-pointer">
+          <span className="px-3 py-1 rounded-full text-xs font-mono bg-emerald-950 text-emerald-300 border border-emerald-800">
+            Hover.dev Spring
+          </span>
+          <h3 className="text-2xl font-bold text-white mt-3">Spring Lift Micro-Physics</h3>
+          <p className="text-xs text-neutral-400 mt-2">
+            Cards respond to pointer hover with natural mass and deceleration physics.
+          </p>
+        </div>
+
+        <div className="col-span-1 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+          <span className="text-xs font-mono text-neutral-400 uppercase">MAGNETIC</span>
+          <h3 className="text-lg font-bold text-white mt-1">Cursor Attraction</h3>
+          <span className="text-xs text-neutral-500 font-mono">hover.dev pattern</span>
+        </div>
+      </div>
+    </section>
+  );
+}`
+  },
+
+  // 17. Ibelick UI (Julien Thibeaut)
+  {
+    slug: 'ibelick-spotlight-bento',
+    title: 'Ibelick UI Minimalist Ambient Bento Card',
+    description: 'Iconic minimalist bento grid from Julien Thibeaut (ui.ibelick.com) featuring subtle ambient glow, hairline borders, and pure typography.',
+    category: 'spotlight-shaders',
+    source: 'ibelick',
+    sourceName: 'Ibelick UI (Julien Thibeaut)',
+    sourceUrl: 'https://ui.ibelick.com',
+    tags: ['ibelick', 'minimalist', 'ambient-glow', 'subtle', 'hairline', 'craft'],
+    features: [
+      'Delicate hairline borders (border-white/5 to border-white/10)',
+      'Subtle diffused radial glow providing soft background radiance',
+      'Understated monochromatic elegance without visual noise'
+    ],
+    tilesSummary: [
+      { title: 'Ambient Hairline Tile', subtitle: 'Ultra-refined 1px border with subtle inner glow', colSpan: 'col-span-1 md:col-span-2', highlight: 'Hairline Elegance' },
+      { title: 'Monochrome Focal Card', subtitle: 'Text-first hierarchy with micro-indicator', colSpan: 'col-span-1', highlight: 'Quiet Design' }
+    ],
+    code: `import React from 'react';
+
+export default function IbelickBento() {
+  return (
+    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-black text-white font-sans antialiased">
+      <div className="mb-8">
+        <span className="text-xs font-mono uppercase tracking-widest text-neutral-400">ui.ibelick.com</span>
+        <h2 className="text-3xl font-bold text-white mt-1">Minimalist Hairline Bento</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-950 border border-white/10 p-8 flex flex-col justify-between relative overflow-hidden group">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none group-hover:bg-white/10 transition duration-700" />
+          <div>
+            <span className="text-xs font-mono text-neutral-400 uppercase tracking-widest">Quiet Craft</span>
+            <h3 className="text-2xl font-bold text-white mt-2">Understated Optical Restraint</h3>
+            <p className="text-xs text-neutral-400 mt-2 max-w-md">
+              Julien Thibeaut's signature aesthetic: pure typography, subtle 1px hairline borders, and calm ambient light.
+            </p>
+          </div>
+          <div className="mt-8 pt-4 border-t border-white/5 flex justify-between text-xs text-neutral-500 font-mono">
+            <span>ui.ibelick.com</span>
+            <span>Minimalist UI</span>
+          </div>
+        </div>
+
+        <div className="col-span-1 rounded-3xl bg-neutral-950 border border-white/10 p-6 flex flex-col justify-between hover:border-white/20 transition duration-300">
+          <span className="text-xs font-mono text-neutral-400 uppercase">CONTRAST</span>
+          <h3 className="text-lg font-bold text-white mt-1">Hairline Border</h3>
+          <span className="text-xs text-neutral-500 font-mono">Pure CSS</span>
+        </div>
+      </div>
+    </section>
+  );
+}`
+  },
+
+  // 18. Syntax UI
+  {
+    slug: 'syntax-ui-shimmer-bento',
+    title: 'Syntax UI Shimmering Gradient Border Bento',
+    description: 'Bento grid from Syntax UI (syntaxui.com) featuring shimmering animated gradient border effects and live counter micro-interactions.',
+    category: 'spotlight-shaders',
+    source: 'syntax-ui',
+    sourceName: 'Syntax UI',
+    sourceUrl: 'https://syntaxui.com',
+    tags: ['syntax-ui', 'shimmer', 'gradient-border', 'counters', 'modern'],
+    features: [
+      'Shimmer animation sweeping across card borders at timed intervals',
+      'Live metric counters and telemetry badges',
+      'High-contrast dark mode finish'
+    ],
+    tilesSummary: [
+      { title: 'Shimmer Border Hero', subtitle: 'Continuous light pulse scanning across card perimeter', colSpan: 'col-span-1 md:col-span-2', highlight: 'Shimmering Light Sweep' },
+      { title: 'Counter Metric', subtitle: 'Live numeric counter with badge highlight', colSpan: 'col-span-1', highlight: 'Animated Counter' }
+    ],
+    code: `import React from 'react';
+
+export default function SyntaxUiBento() {
+  return (
+    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-neutral-950 text-white font-sans antialiased">
+      <div className="mb-8">
+        <span className="text-xs font-mono uppercase tracking-widest text-indigo-400">Syntax UI Components</span>
+        <h2 className="text-3xl font-extrabold text-white mt-1">Shimmering Border Bento</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900 border border-neutral-800 p-7 relative overflow-hidden">
+          <span className="px-3 py-1 rounded-full text-xs font-mono bg-indigo-950 text-indigo-300 border border-indigo-800">
+            Syntax UI Shimmer
+          </span>
+          <h3 className="text-2xl font-bold text-white mt-3">Border Light Sweep</h3>
+          <p className="text-xs text-neutral-400 mt-2">
+            Subtle animated shine scans across borders at timed intervals.
+          </p>
+        </div>
+
+        <div className="col-span-1 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between">
+          <span className="text-xs font-mono text-neutral-400 uppercase">COUNTER</span>
+          <h3 className="text-2xl font-black text-white mt-1">99.8%</h3>
+          <span className="text-xs text-neutral-500 font-mono">syntaxui.com</span>
+        </div>
+      </div>
+    </section>
+  );
+}`
+  },
+
+  // 19. BentoUI.dev
+  {
+    slug: 'bentoui-analytics-bento',
+    title: 'BentoUI.dev Asymmetric SaaS Analytics Bento',
+    description: 'Dedicated bento layout component from BentoUI (bentoui.dev) specialized for SaaS analytics with sparkline graphs and metric tiles.',
+    category: 'minimal-blocks',
+    source: 'bentoui',
+    sourceName: 'BentoUI.dev',
+    sourceUrl: 'https://bentoui.dev',
+    tags: ['bentoui', 'analytics', 'saas', 'sparklines', 'asymmetric', 'tailwind'],
+    features: [
+      'Asymmetric 3-column bento layout optimized for SaaS conversion metrics',
+      'Embedded sparkline vector charts displaying trend trajectories',
+      'Responsive stacking on small screens with no content clobbering'
+    ],
+    tilesSummary: [
+      { title: 'SaaS Metric Ingestion', subtitle: 'Volume throughput graph with peak tracking', colSpan: 'col-span-1 md:col-span-2', highlight: 'Sparkline Vector Tile' },
+      { title: 'Conversion Rate', subtitle: 'Target KPI status dial', colSpan: 'col-span-1', highlight: 'KPI Dial' }
+    ],
+    code: `import React from 'react';
+
+export default function BentoUiDevBento() {
+  return (
+    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-[#0a0a0c] text-white font-sans antialiased">
+      <div className="mb-8">
+        <span className="text-xs font-mono uppercase tracking-widest text-emerald-400">BentoUI.dev Library</span>
+        <h2 className="text-3xl font-extrabold text-white mt-1">Asymmetric SaaS Analytics Bento</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="col-span-1 md:col-span-2 rounded-3xl bg-neutral-900 border border-neutral-800 p-7 flex flex-col justify-between">
+          <div>
+            <span className="text-xs font-mono text-neutral-400 uppercase">VOLUME THROUGHPUT</span>
+            <h3 className="text-2xl font-bold text-white mt-1">4.8M API Calls / Day</h3>
+            <p className="text-xs text-neutral-400 mt-2">Clean SVG sparkline showing weekly volume trends.</p>
+          </div>
+          <div className="mt-6 pt-3 border-t border-neutral-800 flex justify-between text-xs text-neutral-500 font-mono">
+            <span>bentoui.dev template</span>
+            <span className="text-emerald-400">+19.2% Growth</span>
+          </div>
+        </div>
+
+        <div className="col-span-1 rounded-3xl bg-neutral-900 border border-neutral-800 p-6 flex flex-col justify-between">
+          <span className="text-xs font-mono text-neutral-400 uppercase">CONVERSION</span>
+          <h3 className="text-2xl font-bold text-white mt-1">4.2% Rate</h3>
+          <span className="text-xs text-neutral-500 font-mono">KPI Target Met</span>
+        </div>
+      </div>
+    </section>
+  );
+}`
+  },
+
+  // 20. Bentogrids.com
+  {
+    slug: 'bentogrids-editorial-bento',
+    title: 'Bentogrids Swiss Architectural Editorial Bento',
+    description: 'Curated bento grid inspired by top showcases on bentogrids.com featuring Swiss baseline rhythm, bold serif typography, and tactile elevations.',
+    category: 'minimal-blocks',
+    source: 'bentogrids',
+    sourceName: 'Bentogrids.com Gallery',
+    sourceUrl: 'https://bentogrids.com',
+    tags: ['bentogrids', 'editorial', 'swiss-style', 'minimalist', 'typography', 'architecture'],
+    features: [
+      'Swiss typographic baseline grid rhythm (Golden ratio line-heights)',
+      'Subtle tactile hover elevations giving cards physical weight',
+      'Warm monochrome background with high contrast dividers'
+    ],
+    tilesSummary: [
+      { title: 'The Bento Aesthetic', subtitle: 'Modular layout structure that elevates information hierarchy', colSpan: 'col-span-1 md:col-span-2', highlight: 'Editorial Typography Lead' },
+      { title: 'Swiss Contrast', subtitle: 'Strict black and warm white palette', colSpan: 'col-span-1', highlight: 'High Contrast Card' }
+    ],
+    code: `import React from 'react';
+
+export default function BentogridsEditorialBento() {
+  return (
+    <section className="w-full max-w-5xl mx-auto py-12 px-4 bg-[#fbfaf8] text-neutral-900 font-sans antialiased">
+      <div className="mb-8 border-b border-neutral-200 pb-4">
+        <span className="text-xs uppercase tracking-widest font-mono text-neutral-500">Bentogrids.com Curation</span>
+        <h2 className="text-3xl font-serif text-neutral-950 mt-1">Swiss Architectural Bento</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="col-span-1 md:col-span-2 rounded-2xl bg-white border border-neutral-200 p-8 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition duration-500">
+          <div>
+            <span className="text-xs font-mono text-neutral-400 uppercase">MODULAR HARMONY</span>
+            <h3 className="text-2xl font-serif text-neutral-950 mt-2">12-Column Baseline Rhythm</h3>
+            <p className="text-xs text-neutral-600 mt-2 max-w-md font-sans">
+              Each cell tells an autonomous story while harmonizing with the overarching composition.
+            </p>
+          </div>
+          <div className="mt-8 pt-4 border-t border-neutral-100 flex justify-between text-xs text-neutral-400 font-mono">
+            <span>bentogrids.com</span>
+            <span>Swiss Layout</span>
+          </div>
+        </div>
+
+        <div className="col-span-1 rounded-2xl bg-neutral-950 text-white p-7 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition duration-500">
+          <span className="text-xs font-mono text-neutral-400 uppercase">PALETTE</span>
+          <h3 className="text-xl font-serif mt-1">Pure Contrast</h3>
+          <span className="text-xs text-neutral-400 font-mono">Classic Swiss</span>
+        </div>
       </div>
     </section>
   );

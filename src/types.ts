@@ -3,7 +3,8 @@ export type BentoCategory =
   | 'spotlight-shaders'
   | '3d-spatial'
   | 'particles-canvas'
-  | 'minimal-blocks';
+  | 'minimal-blocks'
+  | 'interactive-widgets';
 
 export type BentoSource =
   | 'spell'
@@ -17,7 +18,15 @@ export type BentoSource =
   | 'beui'
   | 'affect-ui'
   | 'magicui'
-  | 'aceternity';
+  | 'aceternity'
+  | '21st-dev'
+  | 'kokonutui'
+  | 'originui'
+  | 'hover-dev'
+  | 'ibelick'
+  | 'syntax-ui'
+  | 'bentoui'
+  | 'bentogrids';
 
 export interface BentoTile {
   title: string;

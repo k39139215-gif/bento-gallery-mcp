@@ -30,41 +30,42 @@ async function main() {
   const parsedCat = JSON.parse(resCat.content[0].text);
   console.log("Categories found:", parsedCat.map((c) => `${c.id} (${c.count})`).join(", "));
 
-  console.log("\n3. Calling list_sources (Component Libraries)...");
+  console.log("\n3. Calling list_sources (20 Component Libraries)...");
   const resSources = await client.callTool({ name: "list_sources", arguments: {} });
   const parsedSources = JSON.parse(resSources.content[0].text);
-  console.log("Component Libraries found:", parsedSources.map((s) => `${s.name} [${s.id}]`).join(", "));
+  console.log("Total Component Libraries:", parsedSources.length);
+  console.log("Sample Libraries:", parsedSources.slice(0, 6).map((s) => `${s.name} [${s.id}]`).join(", "));
 
-  console.log("\n4. Calling list_grids (category: 'spotlight-shaders')...");
+  console.log("\n4. Calling list_grids (category: 'interactive-widgets')...");
   const resList = await client.callTool({
     name: "list_grids",
-    arguments: { category: "spotlight-shaders" },
+    arguments: { category: "interactive-widgets" },
   });
   const parsedList = JSON.parse(resList.content[0].text);
-  console.log(`Spotlight & Shader grids (${parsedList.total}):`, parsedList.grids.map((g) => g.slug).join(", "));
+  console.log(`Interactive widget grids (${parsedList.total}):`, parsedList.grids.map((g) => g.slug).join(", "));
 
-  console.log("\n5. Calling search_grids ('particles')...");
+  console.log("\n5. Calling search_grids ('terminal')...");
   const resSearch = await client.callTool({
     name: "search_grids",
-    arguments: { query: "particles" },
+    arguments: { query: "terminal" },
   });
   const parsedSearch = JSON.parse(resSearch.content[0].text);
-  console.log("Search results for 'particles':", parsedSearch.map((g) => `${g.slug} (${g.sourceName})`));
+  console.log("Search results for 'terminal':", parsedSearch.map((g) => `${g.slug} (${g.sourceName})`));
 
-  console.log("\n6. Calling get_grid ('spell-spatial-tilt-bento')...");
+  console.log("\n6. Calling get_grid ('21st-dev-terminal-bento')...");
   const resGrid = await client.callTool({
     name: "get_grid",
-    arguments: { slug: "spell-spatial-tilt-bento" },
+    arguments: { slug: "21st-dev-terminal-bento" },
   });
   const parsedGrid = JSON.parse(resGrid.content[0].text);
-  console.log("Spell UI bento title:", parsedGrid.title);
+  console.log("21st.dev bento title:", parsedGrid.title);
   console.log("Component source:", parsedGrid.sourceName);
   console.log("Tiles count:", parsedGrid.tilesSummary.length);
 
-  console.log("\n7. Calling get_bento_code ('cult-ui-shader-bento')...");
+  console.log("\n7. Calling get_bento_code ('kokonutui-glowing-bento')...");
   const resCode = await client.callTool({
     name: "get_bento_code",
-    arguments: { slug: "cult-ui-shader-bento" },
+    arguments: { slug: "kokonutui-glowing-bento" },
   });
   const codeText = resCode.content[0].text;
   console.log("Code length:", codeText.length, "bytes");
