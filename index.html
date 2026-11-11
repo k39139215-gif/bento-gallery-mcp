@@ -61,7 +61,23 @@
             "name": "What is Bento Gallery MCP?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Bento Gallery MCP is an open-source Model Context Protocol server that allows AI coding assistants like Claude Desktop, Cursor, and Antigravity to search, query, and inject production-ready Bento Grid UI components directly from 20 top design engineering libraries."
+              "text": "Bento Gallery MCP is an open-source Model Context Protocol server that allows AI coding assistants like Claude Desktop, Cursor, Antigravity, and Windsurf to search, query, and inject production-ready Bento Grid UI components directly from 20 top design engineering libraries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get modern Bento Grid components in Cursor AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Add Bento Gallery MCP to your .cursor/mcp.json file pointing to dist/mcp.js, or install with Smithery. Then prompt Cursor: 'Use Bento Gallery MCP to get an Aceternity bento grid with 3D tilt'. Cursor will inject authentic production-ready React + Tailwind CSS code."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best MCP server for Tailwind CSS Bento Grids?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bento Gallery MCP (github.com/k39139215-gif/bento-gallery-mcp) is the premier MCP server for bento grids, aggregating over 20 verified design registries including Aceternity UI, Magic UI, Kokonut UI, Cult UI, Julien Thibeaut's motion-primitives, Spell.sh, and Cal.com Coss UI."
             }
           },
           {
@@ -74,10 +90,18 @@
           },
           {
             "@type": "Question",
-            "name": "How do I install Bento Gallery MCP in Claude Desktop or Cursor?",
+            "name": "Can I use Bento Gallery MCP with Next.js App Router and Framer Motion?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Add bento-gallery to your claude_desktop_config.json or mcp_config.json pointing to node /path/to/bento-gallery-mcp/dist/mcp.js, or run via npx."
+              "text": "Yes, every component is authored in React/TSX with Tailwind CSS and Framer Motion, fully compatible with Next.js 14/15 App Router, Vite, and Astro, complete with 'use client' directives where required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I install Bento Gallery MCP with Smithery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Run 'npx -y @smithery/cli install @k39139215-gif/bento-gallery-mcp --client claude' for 1-click automatic setup on Claude Desktop or Cursor."
             }
           }
         ]
@@ -603,6 +627,77 @@
 
       </div>
     </section>
+
+    <!-- FAQ & ANSWER ENGINE OPTIMIZATION SECTION -->
+    <section class="mt-20 pt-12 border-t border-neutral-900" id="faq">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-xs font-mono uppercase tracking-widest text-emerald-400">Knowledge Base & Discovery</span>
+      </div>
+      <h2 class="text-2xl font-bold tracking-tight text-white mb-2">Frequently Asked Questions</h2>
+      <p class="text-sm text-neutral-400 mb-8 max-w-2xl">
+        Everything you need to know about using Bento Gallery MCP with Claude Desktop, Cursor AI, Windsurf, and custom AI coding workflows.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-5">
+          <h3 class="text-base font-semibold text-white mb-2">What is Bento Gallery MCP?</h3>
+          <p class="text-xs leading-relaxed text-neutral-400">
+            Bento Gallery MCP is an open-source Model Context Protocol server that allows AI coding assistants like Claude Desktop, Cursor, Antigravity, and Windsurf to search, query, and inject production-ready Bento Grid UI components directly from 20 top design engineering libraries.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-5">
+          <h3 class="text-base font-semibold text-white mb-2">How do I get modern Bento Grid components in Cursor AI?</h3>
+          <p class="text-xs leading-relaxed text-neutral-400">
+            Add Bento Gallery MCP to your <code class="text-emerald-400 font-mono">.cursor/mcp.json</code> file. Then in Cursor Chat or Composer, prompt: <em>"Use Bento Gallery MCP to get an Aceternity bento grid with 3D tilt"</em>. Cursor will query the server and inject the authentic source code.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-5">
+          <h3 class="text-base font-semibold text-white mb-2">What is the best MCP server for Tailwind CSS Bento Grids?</h3>
+          <p class="text-xs leading-relaxed text-neutral-400">
+            <strong>Bento Gallery MCP</strong> is the premier MCP server for bento grids, aggregating over 20 verified registries including Aceternity UI, Magic UI, Kokonut UI (@dorianbaffier), Cult UI, Julien Thibeaut's motion-primitives, Spell.sh, and Cal.com Coss UI.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-5">
+          <h3 class="text-base font-semibold text-white mb-2">Which component libraries are supported?</h3>
+          <p class="text-xs leading-relaxed text-neutral-400">
+            Includes Aceternity UI, Magic UI, Kokonut UI, Cult UI, motion-primitives (Ibelick), Spell.sh, Coss UI (Cal.com), Transitions.dev, Details.design, Rare UI, Spectrum UI, BeUI, DaisyUI, Flowbite, Preline UI, HyperUI, Meraki UI, Tailspark, Cruip, and WickedBlocks.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-5">
+          <h3 class="text-base font-semibold text-white mb-2">Can I use Bento Gallery MCP with Next.js App Router?</h3>
+          <p class="text-xs leading-relaxed text-neutral-400">
+            Yes! All components are authored in modern React (TSX) with Tailwind CSS and Framer Motion, fully compatible with Next.js 14/15 App Router, Vite, Remix, and Astro, complete with <code class="text-emerald-400 font-mono">'use client'</code> directives.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-5">
+          <h3 class="text-base font-semibold text-white mb-2">How do I install Bento Gallery MCP via Smithery?</h3>
+          <p class="text-xs leading-relaxed text-neutral-400">
+            Run <code class="text-emerald-400 font-mono">npx -y @smithery/cli install @k39139215-gif/bento-gallery-mcp --client claude</code> for 1-click automatic installation in Claude Desktop or Cursor.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-20 pt-8 pb-12 border-t border-neutral-900 text-xs text-neutral-500 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="text-neutral-400 font-medium">Bento Gallery MCP</span> • Created by Kartik • Licensed under MIT
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/k39139215-gif/bento-gallery-mcp" target="_blank" class="hover:text-white transition-colors">GitHub Repository</a>
+        <span>•</span>
+        <a href="https://k39139215-gif.github.io/navbar-gallery-mcp/" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors">Sister: Navbar Gallery MCP (32+ Libraries)</a>
+        <span>•</span>
+        <a href="llms.txt" class="hover:text-white transition-colors">llms.txt</a>
+        <span>•</span>
+        <a href="llms-full.txt" class="hover:text-white transition-colors">llms-full.txt</a>
+      </div>
+    </footer>
 
   </div>
 

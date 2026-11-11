@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-server.json",
+  "name": "bento-gallery-mcp",
+  "displayName": "Bento Gallery MCP",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server & CLI curating world-class Bento Grid UI components directly from 20 premier design engineering libraries (Aceternity UI, Magic UI, Kokonut UI, Cult UI, Spell.sh, Ibelick, and more).",
+  "homepage": "https://k39139215-gif.github.io/bento-gallery-mcp/",
+  "repository": "https://github.com/k39139215-gif/bento-gallery-mcp",
+  "author": "Kartik",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio",
+    "command": "node",
+    "args": ["dist/mcp.js"]
+  },
+  "tools": [
+    {
+      "name": "list_categories",
+      "description": "List all supported Bento Grid component categories (marketing, features, analytics, developer, minimal, interactive)"
+    },
+    {
+      "name": "list_sources",
+      "description": "List all 20 verified component design engineering libraries"
+    },
+    {
+      "name": "list_grids",
+      "description": "List bento grids filtered by category or source library with metadata and tags"
+    },
+    {
+      "name": "search_grids",
+      "description": "Full-text semantic search across all bento grid titles, tags, and authors"
+    },
+    {
+      "name": "get_grid",
+      "description": "Get complete layout geometry, dependencies, and external docs for a bento grid"
+    },
+    {
+      "name": "get_bento_code",
+      "description": "Get 100% production-ready React + Tailwind CSS + Framer Motion code ready to paste"
+    }
+  ]
+}
