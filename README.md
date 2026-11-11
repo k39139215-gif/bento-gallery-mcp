@@ -1,11 +1,16 @@
 # Bento Gallery MCP & CLI 🍱
 
 [![Awesome MCP Servers](https://img.shields.io/badge/Awesome-MCP_Servers-brightgreen?logo=awesomelists&logoColor=white)](https://github.com/punkpeye/awesome-mcp-servers)
+[![Smithery Badge](https://smithery.ai/badge/bento-gallery-mcp)](https://smithery.ai/server/bento-gallery-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](https://opensource.org/licenses/MIT)
 [![MCP Protocol](https://img.shields.io/badge/MCP-1.31.0-blue.svg)](https://modelcontextprotocol.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-indigo.svg)](https://www.typescriptlang.org/)
 [![ChatGPT & Claude Ready](https://img.shields.io/badge/AI_Ready-ChatGPT_%7C_Claude_%7C_Cursor-purple.svg)](https://k39139215-gif.github.io/bento-gallery-mcp/)
 [![Live Review Showcase](https://img.shields.io/badge/Live_Showcase-GitHub_Pages-orange.svg)](https://k39139215-gif.github.io/bento-gallery-mcp/)
+
+<p align="center">
+  <img src="https://k39139215-gif.github.io/bento-gallery-mcp/assets/og-image.png" alt="Bento Gallery MCP Social Preview" width="100%" />
+</p>
 
 The premier **Model Context Protocol (MCP) server & CLI** curating production-ready, authentic **Bento Grid UI Components & Layouts** directly from **20 world-class design engineering libraries and component registries**.
 
@@ -79,7 +84,14 @@ Traditional AI generates generic placeholder grids with fake styling. **`bento-g
 
 ## ⚡ Quick Start & Setup
 
-### 1. Installation & Build
+### 1. 1-Click Install via Smithery (Recommended)
+
+To automatically install and configure for Claude Desktop:
+```bash
+npx -y @smithery/cli install bento-gallery-mcp --client claude
+```
+
+### 2. Manual Installation & Build
 
 ```bash
 git clone https://github.com/k39139215-gif/bento-gallery-mcp.git
@@ -89,7 +101,7 @@ npm run build
 npm test
 ```
 
-### 2. Configure in Claude Desktop / Cursor / Antigravity
+### 3. Configure in Claude Desktop / Cursor / Antigravity / Windsurf
 
 Add to your MCP configuration file (`claude_desktop_config.json` or `mcp_config.json`):
 
@@ -106,7 +118,7 @@ Add to your MCP configuration file (`claude_desktop_config.json` or `mcp_config.
 }
 ```
 
-### 3. Standalone Terminal CLI Usage
+### 4. Standalone Terminal CLI Usage
 
 ```bash
 # List all 20 component libraries
